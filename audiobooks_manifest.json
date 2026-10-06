@@ -10,7 +10,8 @@
     "EN_10",
     "EN_11",
     "EN_12",
-    "EN_13"
+    "EN_13",
+    "EN_14"
   ],
   "books": {
     "EN_01": {
@@ -121,6 +122,16 @@
       "folder": "13_The_Art_Of_War_Sun_Tzu",
       "parts_installed": 3,
       "total_duration_minutes": 73,
+      "language": "English"
+    },
+    "EN_14": {
+      "book": "The Old Man and the Sea",
+      "author": "Ernest Hemingway",
+      "narrator": "Charlton Heston (Official)",
+      "category": "01_English",
+      "folder": "14_The_Old_Man_And_The_Sea_Hemingway",
+      "parts_installed": 6,
+      "total_duration_minutes": 153,
       "language": "English"
     }
   }
