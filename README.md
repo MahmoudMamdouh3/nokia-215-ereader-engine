@@ -206,11 +206,31 @@ python download_audiobooks.py status
 python download_audiobooks.py en
 python download_audiobooks.py ar
 ```
-*Featured Audiobooks:*
-- **English Editions (Original Author & Legendary Voices)**: *Atomic Habits* (Read by author James Clear), *The 48 Laws of Power* & *The Laws of Human Nature* (Robert Greene), *The Alchemist* (Jeremy Irons), *The Metamorphosis* (Benedict Cumberbatch), *The Old Man and the Sea* (Charlton Heston), *1984*, *Animal Farm*, *Meditations*, *The Art of War*, etc.
-- **Arabic Editions (Complete Official Broadcast Productions)**: *العادات الذرية*, *سيكولوجية المال*, *كيف تؤثر على الآخرين وتكتسب الأصدقاء*, *قواعد السطوة الـ 48*, *الإتقان*, *قوانين الطبيعة البشرية*, *فن الإغواء*, *رواية 1984*, *مزرعة الحيوان*, *الخيميائي*, *الأمير الصغير*, *الليالي البيضاء*, *المحاكمة*, *فن الحرب*, *التأملات*, *الشيخ والبحر*, *النبي*, *الجريمة والعقاب*.
+*Installed Audiobooks on Phone (16 Complete Titles / 146 Parts / ~72 Hours):*
+- **English Editions (14 Titles / 120 Parts)**:
+  - *Atomic Habits* — James Clear (Original Author Voice, 12 parts)
+  - *The Psychology of Money* — Morgan Housel (Official HarperAudio / Chris Hill, 8 parts)
+  - *How to Win Friends and Influence People* — Dale Carnegie (15 parts)
+  - *The Laws of Human Nature* — Robert Greene (Original Author Voice, 3 parts)
+  - *Mastery* — Robert Greene (Official Unabridged / Fred Sanders, 9 parts)
+  - *1984* — George Orwell (Official Unabridged / Simon Prebble, 19 parts)
+  - *Animal Farm* — George Orwell (Official Unabridged / Ralph Cosham, 7 parts)
+  - *The Alchemist* — Paulo Coelho (Official HarperAudio / Jeremy Irons, 9 parts)
+  - *The Prophet* — Kahlil Gibran (Official Unabridged / Paul Sparer, 3 parts)
+  - *Meditations* — Marcus Aurelius (15 parts)
+  - *The Art of War* — Sun Tzu (3 parts)
+  - *The Old Man and the Sea* — Ernest Hemingway (Narrated by Charlton Heston, 6 parts)
+  - *White Nights* — Fyodor Dostoevsky (Narrated by David Thorn, 6 parts)
+  - *The Metamorphosis* — Franz Kafka (Narrated by Benedict Cumberbatch, 5 parts)
+- **Arabic Editions (2 Titles / 26 Parts)**:
+  - *العادات الذرية* — جيمس كلير (15 parts, 438 mins)
+  - *سيكولوجية المال* — مورغان هاوسل (11 parts, 317 mins)
 
-### 8. Sync Cleanly to Your Phone
+### 8. Checkpoint & Resume System
+All audio and media pipelines support persistent JSON manifests (`audiobooks_manifest.json`, `podcasts_manifest.json`) and safe resume. For full inventory details and exact commands to resume paused pipelines, refer to:
+👉 **[CHECKPOINT_RESUME_GUIDE.md](file:///e:/nokia/CHECKPOINT_RESUME_GUIDE.md)**
+
+### 9. Sync Cleanly to Your Phone
 Connect your Nokia 215 4G (or SD card) via USB and select **Mass Storage / Memory Card Mode** (mounted as `F:\`):
 ```bash
 python sync_books_to_phone.py

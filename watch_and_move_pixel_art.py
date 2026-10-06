@@ -9,9 +9,9 @@ TARGET_DIR = os.path.join(DOWNLOADS_DIR, "pixel art thing")
 os.makedirs(TARGET_DIR, exist_ok=True)
 
 PART_LINKS = {
-    "P1": "https://send.now/i2gduql8qxbw",
+    "P1": "https://send.now/msgdb89lb3bc",
     "P2": "https://send.now/pk21c4z3x4dg",
-    "P3": "https://send.now/msgdb89lb3bc"
+    "P3": "https://send.now/i2gduql8qxbw"
 }
 
 print(f"[Watcher Started] Fully Automated Course Downloader & Mover Active", flush=True)
@@ -73,17 +73,17 @@ while True:
             print("[Auto-Chain] ALL 3 PARTS OF PIXEL ART MASTER COURSE COMPLETED & READY IN pixel art thing!", flush=True)
 
         # Log active download progress
-        cr_downloads = glob.glob(os.path.join(DOWNLOADS_DIR, "*Pixel Art*.crdownload"))
+        cr_downloads = glob.glob(os.path.join(DOWNLOADS_DIR, "*.crdownload"))
         for cr in cr_downloads:
             sz_mb = os.path.getsize(cr) / (1024 * 1024)
             bname = os.path.basename(cr)
-            print(f"[Edge Active Download] {bname}: {sz_mb:.1f} MB / ~2800 MB ({sz_mb/2800*100:.1f}%)", flush=True)
+            print(f"[Active Download in Downloads] {bname}: {sz_mb:.1f} MB", flush=True)
 
         cr_target = glob.glob(os.path.join(TARGET_DIR, "*.crdownload"))
         for cr in cr_target:
             sz_mb = os.path.getsize(cr) / (1024 * 1024)
             bname = os.path.basename(cr)
-            print(f"[Brave Active Download in Target] {bname}: {sz_mb:.1f} MB", flush=True)
+            print(f"[Active Download in Target] {bname}: {sz_mb:.1f} MB", flush=True)
 
     except Exception as e:
         print(f"[Watcher Exception]: {e}", flush=True)
