@@ -8,7 +8,9 @@
     "EN_08",
     "EN_09",
     "EN_10",
-    "EN_11"
+    "EN_11",
+    "EN_12",
+    "EN_13"
   ],
   "books": {
     "EN_01": {
@@ -99,6 +101,26 @@
       "folder": "11_The_Prophet_Kahlil_Gibran",
       "parts_installed": 3,
       "total_duration_minutes": 83,
+      "language": "English"
+    },
+    "EN_12": {
+      "book": "Meditations",
+      "author": "Marcus Aurelius",
+      "narrator": "Duncan Steen",
+      "category": "01_English",
+      "folder": "12_Meditations_Marcus_Aurelius",
+      "parts_installed": 15,
+      "total_duration_minutes": 421,
+      "language": "English"
+    },
+    "EN_13": {
+      "book": "The Art of War",
+      "author": "Sun Tzu",
+      "narrator": "Lionel Giles Translation / Unabridged",
+      "category": "01_English",
+      "folder": "13_The_Art_Of_War_Sun_Tzu",
+      "parts_installed": 3,
+      "total_duration_minutes": 73,
       "language": "English"
     }
   }
