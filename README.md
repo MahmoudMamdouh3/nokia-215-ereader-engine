@@ -83,32 +83,22 @@ The library contains authentic master editions:
 
 ---
 
-## 📝 Executive Book Summaries Library
+## 📝 Executive Book Summaries Library (66 Books - Bilingual)
 
-Located in `summaries/`, this directory contains structured, literary-grade executive study guides in both **English** (`summaries/english/`) and **Arabic** (`summaries/arabic/`).
+Located in `summaries/`, this directory contains structured, literary-grade executive study guides for the **entirety of the library (66 books)** in both **English** (`summaries/english/`) and **Arabic** (`summaries/arabic/`).
 
 Each summary includes:
-1. **Core Thesis / Premise**
-2. **Key Concepts & Laws** (Non-fiction) / **Plot & Character Arcs** (Fiction)
-3. **Major Themes & Symbolism**
-4. **Actionable Takeaways & Famous Quotes**
+1. **Executive Summary & Core Premise**
+2. **Key Structural Breakdown & Analysis**
+3. **Actionable Takeaways, Lessons & Philosophical Significance**
+4. **Memorable Quotes & Memoranda**
 
-Summaries available for:
-- *Atomic Habits* | *العادات الذرية*
-- *The Psychology of Money* | *سيكولوجية المال*
-- *The 48 Laws of Power* | *قواعد السطوة الـ48*
-- *The Pragmatic Programmer* | *المبرمج البراغماتي*
-- *1984* | *١٩٨٤*
-- *Crime and Punishment* | *الجريمة والعقاب*
-- *The Brothers Karamazov* | *الإخوة كارامازوف*
-- *The Trial* | *المحاكمة*
-- *One Hundred Years of Solitude* | *مئة عام من العزلة*
-- *The Lord of the Rings* | *سيد الخواتم*
-- *The Great Gatsby* | *غاتسبي العظيم*
-- *The Stranger* | *الغريب*
-- *Moby-Dick* | *موبي ديك*
-- *Brave New World* | *عالم جديد شجاع*
-- *Dune* | *كثيب*
+The 66 book summaries span all 5 core categories:
+- **Technical & Software Engineering**: *The Pragmatic Programmer* (20th Anniv. Ed), *Programming: Principles and Practice Using C++* (3rd Ed).
+- **Personal Development & Finance**: *Atomic Habits*, *The Psychology of Money*, *How to Win Friends and Influence People*.
+- **Power & Strategy (Robert Greene)**: *The 48 Laws of Power*, *The 33 Strategies of War*, *Mastery*, *The Laws of Human Nature*, *The Art of Seduction*, *The 50th Law*, *The Daily Laws*.
+- **Sacred Scripture & Theology**: *The Holy Quran*, *Tafsir Al-Mukhtasar*, *The Holy Bible*.
+- **World Classics & Masterpieces**: *Crime and Punishment*, *The Brothers Karamazov*, *White Nights*, *War and Peace*, *Anna Karenina*, *The Master and Margarita*, *In Search of Lost Time: Swann's Way*, *Les Misérables*, *Madame Bovary*, *The Stranger*, *The Little Prince*, *The Red and the Black*, *Ulysses*, *1984*, *Animal Farm*, *Pride and Prejudice*, *Wuthering Heights*, *Jane Eyre*, *Great Expectations*, *David Copperfield*, *Frankenstein*, *The Picture of Dorian Gray*, *Heart of Darkness*, *To the Lighthouse*, *Mrs. Dalloway*, *The Lord of the Rings*, *The Great Gatsby*, *Moby-Dick*, *The Catcher in the Rye*, *To Kill a Mockingbird*, *Adventures of Huckleberry Finn*, *The Grapes of Wrath*, *The Sound and the Fury*, *Lolita*, *Beloved*, *Brave New World*, *Dune*, *The Old Man and the Sea*, *Don Quixote*, *One Hundred Years of Solitude*, *Love in the Time of Cholera*, *The Trial*, *The Metamorphosis*, *The Castle*, *The Odyssey*, *The Iliad*, *The Divine Comedy*, *The Magic Mountain*, *One Thousand and One Nights*, *Middlemarch*, *Journey to the End of the Night*.
 
 ---
 
