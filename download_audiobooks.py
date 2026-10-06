@@ -497,6 +497,9 @@ def process_audiobook(item, manifest):
         "--extractor-args", "youtube:player_client=mweb,web",
         "-f", "18/b[height<=360]/ba",
         "-N", "4",
+        "--http-chunk-size", "10M",
+        "--socket-timeout", "30",
+        "--retries", "15",
         "--no-playlist",
         "-o", raw_temp,
         url

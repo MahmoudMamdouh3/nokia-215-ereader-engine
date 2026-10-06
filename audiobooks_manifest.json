@@ -11,7 +11,8 @@
     "EN_11",
     "EN_12",
     "EN_13",
-    "EN_14"
+    "EN_14",
+    "EN_15"
   ],
   "books": {
     "EN_01": {
@@ -132,6 +133,16 @@
       "folder": "14_The_Old_Man_And_The_Sea_Hemingway",
       "parts_installed": 6,
       "total_duration_minutes": 153,
+      "language": "English"
+    },
+    "EN_15": {
+      "book": "White Nights",
+      "author": "Fyodor Dostoevsky",
+      "narrator": "David Thorn (Unabridged)",
+      "category": "01_English",
+      "folder": "15_White_Nights_Dostoevsky",
+      "parts_installed": 6,
+      "total_duration_minutes": 168,
       "language": "English"
     }
   }
