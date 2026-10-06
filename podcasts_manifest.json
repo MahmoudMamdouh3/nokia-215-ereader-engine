@@ -1,0 +1,54 @@
+{
+  "completed": [
+    "1",
+    "2",
+    "3"
+  ],
+  "items": {
+    "1": {
+      "title": "ياسر الحزيمي - كيف تنجح العلاقات",
+      "channel": "01_Fnjan_Thmanyah",
+      "artist": "ثمانية | Thmanyah",
+      "album": "بودكاست فنجان",
+      "yt_id": "pJ0auP7dbcY",
+      "views": "110M+ (Guinness World Record #1 Podcast)",
+      "parts_count": 7,
+      "files": [
+        "01_Yasser_Alhazimi_Pt00.mp3",
+        "01_Yasser_Alhazimi_Pt01.mp3",
+        "01_Yasser_Alhazimi_Pt02.mp3",
+        "01_Yasser_Alhazimi_Pt03.mp3",
+        "01_Yasser_Alhazimi_Pt04.mp3",
+        "01_Yasser_Alhazimi_Pt05.mp3",
+        "01_Yasser_Alhazimi_Pt06.mp3"
+      ]
+    },
+    "2": {
+      "title": "د. خالد الجبير - قلوب تبحث عن النجاة",
+      "channel": "01_Fnjan_Thmanyah",
+      "artist": "ثمانية | Thmanyah",
+      "album": "بودكاست فنجان",
+      "yt_id": "WAwNyAfi3Yk",
+      "views": "20M+",
+      "parts_count": 1,
+      "files": [
+        "02_Pt00.mp3"
+      ]
+    },
+    "3": {
+      "title": "صالح المغامسي - معالم وتأملات وقصص",
+      "channel": "01_Fnjan_Thmanyah",
+      "artist": "ثمانية | Thmanyah",
+      "album": "بودكاست فنجان",
+      "yt_id": "x0ZFvBijpvg",
+      "views": "16M+",
+      "parts_count": 4,
+      "files": [
+        "03_Pt00.mp3",
+        "03_Pt01.mp3",
+        "03_Pt02.mp3",
+        "03_Pt03.mp3"
+      ]
+    }
+  }
+}

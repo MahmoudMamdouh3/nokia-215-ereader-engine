@@ -163,7 +163,23 @@ Run the appropriate pipeline depending on the book type:
   python tafsir_pipeline.py
   ```
 
-### 4. Sync Cleanly to Your Phone
+### 4. Top 50 YouTube Podcasts Pipeline (Voice-Tuned & Split)
+Download, convert to 96 kbps voice-optimized MP3, auto-split long episodes (>45m) into 30-minute parts, and tag ID3 metadata for the Nokia Music player:
+```bash
+python build_top50_podcasts.py
+```
+*To inspect current download progress and completed episodes:*
+```bash
+python build_top50_podcasts.py status
+```
+
+### 5. Large Music Library Organizer (A–Z T9 Keypad Jumping)
+Organize massive flat playlists into 27 alphabetical letter buckets with dedicated artist subfolders so songs can be navigated in seconds using T9 keypad jumps:
+```bash
+python organize_music_library.py
+```
+
+### 6. Sync Cleanly to Your Phone
 Connect your Nokia 215 4G (or SD card) via USB and select **Mass Storage / Memory Card Mode** (mounted as `F:\`):
 ```bash
 python sync_books_to_phone.py
