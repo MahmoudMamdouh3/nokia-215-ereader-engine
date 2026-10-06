@@ -1,6 +1,7 @@
 {
   "completed_audiobooks": [
-    "EN_01"
+    "EN_01",
+    "EN_02"
   ],
   "books": {
     "EN_01": {
@@ -11,6 +12,16 @@
       "folder": "01_Atomic_Habits_James_Clear",
       "parts_installed": 12,
       "total_duration_minutes": 335,
+      "language": "English"
+    },
+    "EN_02": {
+      "book": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "narrator": "Chris Hill (Official HarperAudio)",
+      "category": "01_English",
+      "folder": "02_The_Psychology_Of_Money_Morgan_Housel",
+      "parts_installed": 8,
+      "total_duration_minutes": 240,
       "language": "English"
     }
   }

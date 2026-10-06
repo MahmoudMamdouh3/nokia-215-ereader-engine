@@ -462,6 +462,32 @@ def process_audiobook(item, manifest):
     print(f"Target: {dest_dir}", flush=True)
     print(f"=======================================================", flush=True)
 
+    staging_dir = os.path.join(LOCAL_CACHE, "ab_staging", item_id)
+    staged_existing = sorted([os.path.join(staging_dir, f) for f in os.listdir(staging_dir) if f.endswith(".mp3")]) if os.path.exists(staging_dir) else []
+    if len(staged_existing) > 0:
+        print(f"  [Reusing Staged Files] Found {len(staged_existing)} parts already encoded on SSD! Skipping download.", flush=True)
+        print(f"  [Copying to Phone] Transferring {len(staged_existing)} parts to {dest_dir}...", flush=True)
+        os.makedirs(dest_dir, exist_ok=True)
+        for sf in staged_existing:
+            shutil.copy2(sf, os.path.join(dest_dir, os.path.basename(sf)))
+        shutil.rmtree(staging_dir, ignore_errors=True)
+
+        if item_id not in manifest.get("completed_audiobooks", []):
+            manifest.setdefault("completed_audiobooks", []).append(item_id)
+        manifest.setdefault("books", {})[item_id] = {
+            "book": book_title,
+            "author": author,
+            "narrator": narrator,
+            "category": category,
+            "folder": folder_name,
+            "parts_installed": len(staged_existing),
+            "total_duration_minutes": len(staged_existing) * 30,
+            "language": item.get("language", "English")
+        }
+        save_manifest(manifest)
+        print(f"[{item_id}] Successfully installed: {book_title} ({len(staged_existing)} parts) in {dest_dir}!\n", flush=True)
+        return True
+
     raw_temp = os.path.join(LOCAL_CACHE, f"temp_ab_{item_id}.mp4")
     url = f"https://www.youtube.com/watch?v={yt_id}"
 
@@ -544,6 +570,7 @@ def process_audiobook(item, manifest):
 
     if success_parts == num_parts:
         print(f"  [Copying to Phone] Transferring {num_parts} parts to {dest_dir}...", flush=True)
+        os.makedirs(dest_dir, exist_ok=True)
         for sf in staged_files:
             fname = os.path.basename(sf)
             shutil.copy2(sf, os.path.join(dest_dir, fname))
