@@ -3,7 +3,8 @@
     "EN_01",
     "EN_02",
     "EN_03",
-    "EN_05"
+    "EN_05",
+    "EN_07"
   ],
   "books": {
     "EN_01": {
@@ -44,6 +45,16 @@
       "folder": "05_The_Laws_Of_Human_Nature_Robert_Greene",
       "parts_installed": 3,
       "total_duration_minutes": 60,
+      "language": "English"
+    },
+    "EN_07": {
+      "book": "Mastery",
+      "author": "Robert Greene",
+      "narrator": "Fred Sanders (Official)",
+      "category": "01_English",
+      "folder": "07_Mastery_Robert_Greene",
+      "parts_installed": 9,
+      "total_duration_minutes": 242,
       "language": "English"
     }
   }
