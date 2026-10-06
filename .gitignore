@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large generated book and manga image folders (45,000+ images)
+books_out/
+manga_out/
+manga_raw/
+
+# Raw binary downloads (Multi-gigabyte EPUBs, PDFs)
+# Users can download all raw books using python download_full_library.py and download_tafsir.py
+books_raw/arabic_editions/
+books_raw/english_classics/
+books_raw/tafsir_mokhtasar_ar/
+books_raw/tafsir_mokhtasar_en/
+books_raw/*.epub
+books_raw/*.pdf
+books_raw/*.mobi
+books_raw/*.azw3
+
+# OS metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and scratch
+*.log
+scratch/
+tmp/
