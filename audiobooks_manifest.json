@@ -13,7 +13,8 @@
     "EN_13",
     "EN_14",
     "EN_15",
-    "EN_16"
+    "EN_16",
+    "AR_01"
   ],
   "books": {
     "EN_01": {
@@ -155,6 +156,16 @@
       "parts_installed": 5,
       "total_duration_minutes": 128,
       "language": "English"
+    },
+    "AR_01": {
+      "book": "العادات الذرية",
+      "author": "جيمس كلير",
+      "narrator": "كتاب صوتي كامل (النسخة العربية المعتمدة)",
+      "category": "02_Arabic",
+      "folder": "01_Al_Adat_Al_Dharriyah_Atomic_Habits",
+      "parts_installed": 15,
+      "total_duration_minutes": 438,
+      "language": "Arabic"
     }
   }
 }
