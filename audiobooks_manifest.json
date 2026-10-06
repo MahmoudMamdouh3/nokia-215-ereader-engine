@@ -6,7 +6,9 @@
     "EN_05",
     "EN_07",
     "EN_08",
-    "EN_09"
+    "EN_09",
+    "EN_10",
+    "EN_11"
   ],
   "books": {
     "EN_01": {
@@ -77,6 +79,26 @@
       "folder": "09_Animal_Farm_George_Orwell",
       "parts_installed": 7,
       "total_duration_minutes": 194,
+      "language": "English"
+    },
+    "EN_10": {
+      "book": "The Alchemist",
+      "author": "Paulo Coelho",
+      "narrator": "Jeremy Irons (Official HarperAudio)",
+      "category": "01_English",
+      "folder": "10_The_Alchemist_Paulo_Coelho",
+      "parts_installed": 9,
+      "total_duration_minutes": 240,
+      "language": "English"
+    },
+    "EN_11": {
+      "book": "The Prophet",
+      "author": "Kahlil Gibran",
+      "narrator": "Paul Sparer",
+      "category": "01_English",
+      "folder": "11_The_Prophet_Kahlil_Gibran",
+      "parts_installed": 3,
+      "total_duration_minutes": 83,
       "language": "English"
     }
   }
