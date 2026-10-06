@@ -83,22 +83,42 @@ The library contains authentic master editions:
 
 ---
 
-## 📝 Executive Book Summaries Library (66 Books - Bilingual)
+## 📝 Master Study Guides & Analytical Summaries (66 Books - Bilingual)
 
-Located in `summaries/`, this directory contains structured, literary-grade executive study guides for the **entirety of the library (66 books)** in both **English** (`summaries/english/`) and **Arabic** (`summaries/arabic/`).
+Located in `summaries/`, this directory contains comprehensive, university-grade analytical study guides for the **entirety of the library (66 books)** in both **English** (`summaries/english/`) and **Arabic** (`summaries/arabic/`).
 
-Each summary includes:
-1. **Executive Summary & Core Premise**
-2. **Key Structural Breakdown & Analysis**
-3. **Actionable Takeaways, Lessons & Philosophical Significance**
-4. **Memorable Quotes & Memoranda**
+To eliminate physical scrolling fatigue on the Nokia 215 4G keypad, the summaries are ergonomically organized into **9 thematic sub-categories**:
 
-The 66 book summaries span all 5 core categories:
-- **Technical & Software Engineering**: *The Pragmatic Programmer* (20th Anniv. Ed), *Programming: Principles and Practice Using C++* (3rd Ed).
-- **Personal Development & Finance**: *Atomic Habits*, *The Psychology of Money*, *How to Win Friends and Influence People*.
-- **Power & Strategy (Robert Greene)**: *The 48 Laws of Power*, *The 33 Strategies of War*, *Mastery*, *The Laws of Human Nature*, *The Art of Seduction*, *The 50th Law*, *The Daily Laws*.
-- **Sacred Scripture & Theology**: *The Holy Quran*, *Tafsir Al-Mukhtasar*, *The Holy Bible*.
-- **World Classics & Masterpieces**: *Crime and Punishment*, *The Brothers Karamazov*, *White Nights*, *War and Peace*, *Anna Karenina*, *The Master and Margarita*, *In Search of Lost Time: Swann's Way*, *Les Misérables*, *Madame Bovary*, *The Stranger*, *The Little Prince*, *The Red and the Black*, *Ulysses*, *1984*, *Animal Farm*, *Pride and Prejudice*, *Wuthering Heights*, *Jane Eyre*, *Great Expectations*, *David Copperfield*, *Frankenstein*, *The Picture of Dorian Gray*, *Heart of Darkness*, *To the Lighthouse*, *Mrs. Dalloway*, *The Lord of the Rings*, *The Great Gatsby*, *Moby-Dick*, *The Catcher in the Rye*, *To Kill a Mockingbird*, *Adventures of Huckleberry Finn*, *The Grapes of Wrath*, *The Sound and the Fury*, *Lolita*, *Beloved*, *Brave New World*, *Dune*, *The Old Man and the Sea*, *Don Quixote*, *One Hundred Years of Solitude*, *Love in the Time of Cholera*, *The Trial*, *The Metamorphosis*, *The Castle*, *The Odyssey*, *The Iliad*, *The Divine Comedy*, *The Magic Mountain*, *One Thousand and One Nights*, *Middlemarch*, *Journey to the End of the Night*.
+1. **`01_Computer_Science/`**:
+   - *The Pragmatic Programmer* (Official 20th Anniv. Tips & Craftsmanship)
+   - *Programming: Principles and Practice Using C++* (Stroustrup C++20/C++23)
+2. **`02_Productivity_And_Finance/`**:
+   - *Atomic Habits* (The 4 Laws, Inversion Framework, 2-Minute Rule)
+   - *The Psychology of Money* (All 20 Core Lessons & Behavioral Principles)
+   - *How to Win Friends and Influence People* (Carnegie's Complete 4-Part System)
+3. **`03_Power_And_Strategy/`**:
+   - *The 48 Laws of Power*, *The 33 Strategies of War*, *Mastery*, *The Laws of Human Nature*, *The Art of Seduction*, *The 50th Law*, *The Daily Laws*
+4. **`04_Spiritual_And_Religious/`**:
+   - *The Holy Quran* (Makki/Madani structural overview and theological core)
+   - *Tafsir Al-Mukhtasar* (Verse-by-verse methodology of King Fahd Complex)
+   - *The Holy Bible* (Old and New Testament canons and narrative arcs)
+5. **`05_Russian_Literature/`**:
+   - *Crime and Punishment*, *The Brothers Karamazov*, *White Nights*, *War and Peace*, *Anna Karenina*, *The Master and Margarita*
+6. **`06_French_Literature/`**:
+   - *In Search of Lost Time: Swann's Way*, *Les Misérables*, *Madame Bovary*, *The Stranger*, *The Little Prince*, *The Red and the Black*, *Journey to the End of the Night*
+7. **`07_British_And_Irish_Literature/`**:
+   - *Ulysses*, *1984*, *Animal Farm*, *Pride and Prejudice*, *Wuthering Heights*, *Jane Eyre*, *Great Expectations*, *David Copperfield*, *Frankenstein*, *The Picture of Dorian Gray*, *Heart of Darkness*, *To the Lighthouse*, *Mrs. Dalloway*, *The Lord of the Rings*, *Middlemarch*
+8. **`08_American_Literature/`**:
+   - *The Great Gatsby*, *Moby-Dick*, *The Catcher in the Rye*, *To Kill a Mockingbird*, *Adventures of Huckleberry Finn*, *The Grapes of Wrath*, *The Sound and the Fury*, *Lolita*, *Beloved*, *The Old Man and the Sea*
+9. **`09_World_Classics_And_SciFi/`**:
+   - *Brave New World*, *Dune*, *Don Quixote*, *One Hundred Years of Solitude*, *Love in the Time of Cholera*, *The Trial*, *The Metamorphosis*, *The Castle*, *The Odyssey*, *The Iliad*, *The Divine Comedy*, *The Magic Mountain*, *One Thousand and One Nights*
+
+Each study guide features:
+- **Historical, Cultural & Philosophical Context**
+- **In-Depth Chapter-by-Chapter Plot & Analytical Breakdown**
+- **Major Character Psychology & Archetypes**
+- **Central Themes, Epistemology & Symbolism**
+- **Memorable Quotes & Enduring Takeaways**
 
 ---
 

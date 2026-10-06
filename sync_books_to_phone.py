@@ -101,16 +101,19 @@ def sync_all(force=False):
     sum_src = r"E:\nokia\summaries"
     if os.path.exists(sum_src):
         sum_dst = os.path.join(DST_BASE, "06_Book_Summaries")
-        print("\n[Category] 06_Book_Summaries")
-        for sub in ["english", "arabic"]:
-            sub_src = os.path.join(sum_src, sub)
-            sub_dst = os.path.join(sum_dst, sub)
-            if os.path.exists(sub_src):
-                os.makedirs(sub_dst, exist_ok=True)
-                for sf in os.listdir(sub_src):
-                    if sf.endswith('.md') or sf.endswith('.txt'):
-                        copy_file_buffered(os.path.join(sub_src, sf), os.path.join(sub_dst, sf), force=force)
+        print("\n[Category] 06_Book_Summaries (Preserving 9 Ergonomic Subcategories)")
+        for root, dirs, files in os.walk(sum_src):
+            rel = os.path.relpath(root, sum_src)
+            dest_dir = os.path.join(sum_dst, rel)
+            os.makedirs(dest_dir, exist_ok=True)
+            for sf in files:
+                if sf.endswith('.md') or sf.endswith('.txt'):
+                    s_file = os.path.join(root, sf)
+                    d_file = os.path.join(dest_dir, sf)
+                    if copy_file_buffered(s_file, d_file, force=force):
                         total_copied += 1
+                    else:
+                        total_skipped += 1
 
     elapsed = time.time() - start_time
     print("\n==================================================")
