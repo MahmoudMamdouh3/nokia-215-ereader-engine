@@ -179,7 +179,38 @@ Organize massive flat playlists into 27 alphabetical letter buckets with dedicat
 python organize_music_library.py
 ```
 
-### 6. Sync Cleanly to Your Phone
+### 6. Holy Quran Full Audio Recitations (114 Surahs Canonical)
+Download and install full 114 Surah recitations with embedded ID3 metadata directly from verified CDNs into `F:\Quran\`:
+```bash
+python download_holy_quran.py
+```
+*To inspect current download status:*
+```bash
+python download_holy_quran.py status
+```
+*Supported Reciters:*
+- الشيخ محمد صديق المنشاوي (المصحف المجود)
+- الشيخ محمد صديق المنشاوي (المصحف المرتل)
+- الشيخ فارس عباد (المصحف المرتل)
+- الشيخ محمود خليل الحصري (المصحف المرتل)
+- الشيخ محمود خليل الحصري (المصحف المجود)
+
+### 7. Audiobooks Library (Original Author Voices & Official Arabic Editions)
+Download, voice-tune (96 kbps MP3), and auto-split complete unabridged audiobooks into 30-minute segments into `F:\Audiobooks\01_English\` and `F:\Audiobooks\02_Arabic\`:
+```bash
+python download_audiobooks.py
+```
+*To inspect status or run specific language subsets:*
+```bash
+python download_audiobooks.py status
+python download_audiobooks.py en
+python download_audiobooks.py ar
+```
+*Featured Audiobooks:*
+- **English Editions (Original Author & Legendary Voices)**: *Atomic Habits* (Read by author James Clear), *The 48 Laws of Power* & *The Laws of Human Nature* (Robert Greene), *The Alchemist* (Jeremy Irons), *The Metamorphosis* (Benedict Cumberbatch), *The Old Man and the Sea* (Charlton Heston), *1984*, *Animal Farm*, *Meditations*, *The Art of War*, etc.
+- **Arabic Editions (Complete Official Broadcast Productions)**: *العادات الذرية*, *سيكولوجية المال*, *كيف تؤثر على الآخرين وتكتسب الأصدقاء*, *قواعد السطوة الـ 48*, *الإتقان*, *قوانين الطبيعة البشرية*, *فن الإغواء*, *رواية 1984*, *مزرعة الحيوان*, *الخيميائي*, *الأمير الصغير*, *الليالي البيضاء*, *المحاكمة*, *فن الحرب*, *التأملات*, *الشيخ والبحر*, *النبي*, *الجريمة والعقاب*.
+
+### 8. Sync Cleanly to Your Phone
 Connect your Nokia 215 4G (or SD card) via USB and select **Mass Storage / Memory Card Mode** (mounted as `F:\`):
 ```bash
 python sync_books_to_phone.py

@@ -2,7 +2,19 @@
   "completed": [
     "1",
     "2",
-    "3"
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
   ],
   "items": {
     "1": {
@@ -48,6 +60,198 @@
         "03_Pt01.mp3",
         "03_Pt02.mp3",
         "03_Pt03.mp3"
+      ]
+    },
+    "4": {
+      "title": "د. طارق الحبيب - تشريح الشخصيات والاضطرابات النفسية",
+      "channel": "01_Fnjan_Thmanyah",
+      "artist": "ثمانية | Thmanyah",
+      "album": "بودكاست فنجان",
+      "yt_id": "hdTdev3GVCw",
+      "views": "13M+",
+      "parts_count": 5,
+      "files": [
+        "04_Pt00.mp3",
+        "04_Pt01.mp3",
+        "04_Pt02.mp3",
+        "04_Pt03.mp3",
+        "04_Pt04.mp3"
+      ]
+    },
+    "5": {
+      "title": "د. إبراهيم الخليفي - مفاتيح التربية والتعامل مع المراهقين",
+      "channel": "01_Fnjan_Thmanyah",
+      "artist": "ثمانية | Thmanyah",
+      "album": "بودكاست فنجان",
+      "yt_id": "CP5pfHZbz3M",
+      "views": "11M+",
+      "parts_count": 5,
+      "files": [
+        "05_Pt00.mp3",
+        "05_Pt01.mp3",
+        "05_Pt02.mp3",
+        "05_Pt03.mp3",
+        "05_Pt04.mp3"
+      ]
+    },
+    "6": {
+      "title": "Katt Williams Unleashed",
+      "channel": "02_Club_Shay_Shay",
+      "artist": "Shannon Sharpe",
+      "album": "Club Shay Shay",
+      "yt_id": "8oRRZiRQxTs",
+      "views": "94M+",
+      "parts_count": 6,
+      "files": [
+        "06_Pt00.mp3",
+        "06_Pt01.mp3",
+        "06_Pt02.mp3",
+        "06_Pt03.mp3",
+        "06_Pt04.mp3",
+        "06_Pt05.mp3"
+      ]
+    },
+    "7": {
+      "title": "Amanda Seales Speaks Her Truth",
+      "channel": "02_Club_Shay_Shay",
+      "artist": "Shannon Sharpe",
+      "album": "Club Shay Shay",
+      "yt_id": "Q9fRHyEidvY",
+      "views": "16M+",
+      "parts_count": 7,
+      "files": [
+        "07_Pt00.mp3",
+        "07_Pt01.mp3",
+        "07_Pt02.mp3",
+        "07_Pt03.mp3",
+        "07_Pt04.mp3",
+        "07_Pt05.mp3",
+        "07_Pt06.mp3"
+      ]
+    },
+    "8": {
+      "title": "Mo'Nique Sets The Record Straight",
+      "channel": "02_Club_Shay_Shay",
+      "artist": "Shannon Sharpe",
+      "album": "Club Shay Shay",
+      "yt_id": "q1PVr6AeUT0",
+      "views": "14M+",
+      "parts_count": 6,
+      "files": [
+        "08_Pt00.mp3",
+        "08_Pt01.mp3",
+        "08_Pt02.mp3",
+        "08_Pt03.mp3",
+        "08_Pt04.mp3",
+        "08_Pt05.mp3"
+      ]
+    },
+    "9": {
+      "title": "Chad Ochocinco Johnson Unfiltered",
+      "channel": "02_Club_Shay_Shay",
+      "artist": "Shannon Sharpe",
+      "album": "Club Shay Shay",
+      "yt_id": "KgScnzMqu_o",
+      "views": "11M+",
+      "parts_count": 4,
+      "files": [
+        "09_Pt00.mp3",
+        "09_Pt01.mp3",
+        "09_Pt02.mp3",
+        "09_Pt03.mp3"
+      ]
+    },
+    "10": {
+      "title": "Cedric The Entertainer",
+      "channel": "02_Club_Shay_Shay",
+      "artist": "Shannon Sharpe",
+      "album": "Club Shay Shay",
+      "yt_id": "lhUJ0orHGX8",
+      "views": "10M+",
+      "parts_count": 3,
+      "files": [
+        "10_Pt00.mp3",
+        "10_Pt01.mp3",
+        "10_Pt02.mp3"
+      ]
+    },
+    "11": {
+      "title": "JRE #1315 - Bob Lazar and Jeremy Corbell",
+      "channel": "03_Joe_Rogan_Experience",
+      "artist": "Joe Rogan",
+      "album": "The Joe Rogan Experience",
+      "yt_id": "BEWz4SXfyCQ",
+      "views": "67M+",
+      "parts_count": 5,
+      "files": [
+        "11_Pt00.mp3",
+        "11_Pt01.mp3",
+        "11_Pt02.mp3",
+        "11_Pt03.mp3",
+        "11_Pt04.mp3"
+      ]
+    },
+    "12": {
+      "title": "JRE #1368 - Edward Snowden",
+      "channel": "03_Joe_Rogan_Experience",
+      "artist": "Joe Rogan",
+      "album": "The Joe Rogan Experience",
+      "yt_id": "efs3QRr8LWw",
+      "views": "35M+",
+      "parts_count": 6,
+      "files": [
+        "12_Pt00.mp3",
+        "12_Pt01.mp3",
+        "12_Pt02.mp3",
+        "12_Pt03.mp3",
+        "12_Pt04.mp3",
+        "12_Pt05.mp3"
+      ]
+    },
+    "13": {
+      "title": "JRE #1255 - Alex Jones and Eddie Bravo",
+      "channel": "03_Joe_Rogan_Experience",
+      "artist": "Joe Rogan",
+      "album": "The Joe Rogan Experience",
+      "yt_id": "T1h4pjr0XOg",
+      "views": "33M+",
+      "parts_count": 1,
+      "files": [
+        "13_Pt00.mp3"
+      ]
+    },
+    "14": {
+      "title": "JRE #1554 - Kanye West",
+      "channel": "03_Joe_Rogan_Experience",
+      "artist": "Joe Rogan",
+      "album": "The Joe Rogan Experience",
+      "yt_id": "qxOeWuAHOiw",
+      "views": "21M+",
+      "parts_count": 6,
+      "files": [
+        "14_Pt00.mp3",
+        "14_Pt01.mp3",
+        "14_Pt02.mp3",
+        "14_Pt03.mp3",
+        "14_Pt04.mp3",
+        "14_Pt05.mp3"
+      ]
+    },
+    "15": {
+      "title": "JRE #1319 - Bernie Sanders",
+      "channel": "03_Joe_Rogan_Experience",
+      "artist": "Joe Rogan",
+      "album": "The Joe Rogan Experience",
+      "yt_id": "J1H8vYEi128",
+      "views": "20M+",
+      "parts_count": 6,
+      "files": [
+        "15_Pt00.mp3",
+        "15_Pt01.mp3",
+        "15_Pt02.mp3",
+        "15_Pt03.mp3",
+        "15_Pt04.mp3",
+        "15_Pt05.mp3"
       ]
     }
   }
