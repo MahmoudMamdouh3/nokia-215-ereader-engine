@@ -2,7 +2,8 @@
   "completed_audiobooks": [
     "EN_01",
     "EN_02",
-    "EN_03"
+    "EN_03",
+    "EN_05"
   ],
   "books": {
     "EN_01": {
@@ -33,6 +34,16 @@
       "folder": "03_How_To_Win_Friends_Dale_Carnegie",
       "parts_installed": 15,
       "total_duration_minutes": 437,
+      "language": "English"
+    },
+    "EN_05": {
+      "book": "The Laws of Human Nature",
+      "author": "Robert Greene",
+      "narrator": "Robert Greene (Original Author)",
+      "category": "01_English",
+      "folder": "05_The_Laws_Of_Human_Nature_Robert_Greene",
+      "parts_installed": 3,
+      "total_duration_minutes": 60,
       "language": "English"
     }
   }
