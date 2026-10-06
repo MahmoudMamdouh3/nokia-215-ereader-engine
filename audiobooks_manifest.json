@@ -12,7 +12,8 @@
     "EN_12",
     "EN_13",
     "EN_14",
-    "EN_15"
+    "EN_15",
+    "EN_16"
   ],
   "books": {
     "EN_01": {
@@ -143,6 +144,16 @@
       "folder": "15_White_Nights_Dostoevsky",
       "parts_installed": 6,
       "total_duration_minutes": 168,
+      "language": "English"
+    },
+    "EN_16": {
+      "book": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "narrator": "Benedict Cumberbatch (BBC)",
+      "category": "01_English",
+      "folder": "16_The_Metamorphosis_Kafka",
+      "parts_installed": 5,
+      "total_duration_minutes": 128,
       "language": "English"
     }
   }
