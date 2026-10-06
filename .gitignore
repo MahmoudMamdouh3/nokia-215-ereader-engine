@@ -38,3 +38,6 @@ scratch/
 tmp/
 playlist_organization_map.json
 cookies.txt
+
+# Generated calibration kit (rebuild with: python screen_calibration.py)
+calibration_out/

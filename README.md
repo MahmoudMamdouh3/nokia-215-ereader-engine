@@ -20,6 +20,8 @@ This repository provides an **end-to-end automated publishing and rendering pipe
 
 ### 1. The Image-Page Rendering Paradigm
 Rather than relying on non-existent mobile document viewers, every book chapter is rendered into sequential, crisp **240×320 QVGA images** (standard Nokia screen resolution):
+
+> ⚠️ **Known issue (open): the phone's photo viewer is *not* 240×320.** The S30+ viewer permanently draws a status bar (top) and a softkey bar (bottom) that cannot be hidden, and HMD publishes no pixel sizes. Pages sized to the full 240×320 panel are therefore cropped or shrunk. The real usable area is being **measured on the device** with [`screen_calibration.py`](screen_calibration.py) before the library is re-rendered. Full details, the manual verification procedure and the rebuild plan: **[docs/SCREEN_AREA_ISSUE.md](docs/SCREEN_AREA_ISSUE.md)**.
 - **TFT High-Contrast Typography**: Off-white text on deep black or stark crisp black on pure white to prevent screen ghosting.
 - **Proportional Margins**: 8px horizontal padding, 10px vertical header/footer reserve, maximizing readability while preventing clipping under rounded bezel corners.
 - **Dynamic Headers & Footers**: Every page displays `[Book Title | Chapter X]` at the top and `Page X of Y` at the bottom for instant navigation context.

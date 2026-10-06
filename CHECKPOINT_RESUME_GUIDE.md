@@ -56,6 +56,15 @@ All audiobooks are encoded in hardware-friendly **96 kbps MP3** (44.1 kHz, CBR),
 
 ---
 
+## 🚧 Open Issue: Viewer Area ≠ 240×320 (blocks any book / manga re-render)
+
+The phone's photo viewer permanently shows a status bar + softkey bar, so full-size 240×320 pages are cropped or shrunk.
+**Calibration kit is installed at `F:\Calibration\`** (regenerate with `python screen_calibration.py`).
+Until the measured usable area is recorded in [`docs/SCREEN_AREA_ISSUE.md`](docs/SCREEN_AREA_ISSUE.md) §4 and confirmed,
+**do not re-render `books_out/` / `manga_out/`** — the current 45,584 book pages + 19,655 manga pages are still the old 240×320 layout.
+
+---
+
 ## ⏸️ 2. Exact Checkpoint (Where We Stopped)
 
 All pipelines have been safely concluded or paused without corrupting active manifests or filesystems:
