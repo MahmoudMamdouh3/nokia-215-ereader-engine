@@ -5,7 +5,8 @@
     "EN_03",
     "EN_05",
     "EN_07",
-    "EN_08"
+    "EN_08",
+    "EN_09"
   ],
   "books": {
     "EN_01": {
@@ -66,6 +67,16 @@
       "folder": "08_1984_George_Orwell",
       "parts_installed": 19,
       "total_duration_minutes": 569,
+      "language": "English"
+    },
+    "EN_09": {
+      "book": "Animal Farm",
+      "author": "George Orwell",
+      "narrator": "Ralph Cosham (Unabridged)",
+      "category": "01_English",
+      "folder": "09_Animal_Farm_George_Orwell",
+      "parts_installed": 7,
+      "total_duration_minutes": 194,
       "language": "English"
     }
   }
