@@ -1,7 +1,8 @@
 {
   "completed_audiobooks": [
     "EN_01",
-    "EN_02"
+    "EN_02",
+    "EN_03"
   ],
   "books": {
     "EN_01": {
@@ -22,6 +23,16 @@
       "folder": "02_The_Psychology_Of_Money_Morgan_Housel",
       "parts_installed": 8,
       "total_duration_minutes": 240,
+      "language": "English"
+    },
+    "EN_03": {
+      "book": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "narrator": "Official Unabridged",
+      "category": "01_English",
+      "folder": "03_How_To_Win_Friends_Dale_Carnegie",
+      "parts_installed": 15,
+      "total_duration_minutes": 437,
       "language": "English"
     }
   }
