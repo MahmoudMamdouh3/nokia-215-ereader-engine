@@ -83,15 +83,16 @@ The library contains authentic master editions:
 
 ---
 
-## 📝 Master Study Guides & Analytical Summaries (66 Books - Bilingual)
+## 📝 Master Study Guides & Analytical Summaries (67 Books - Bilingual)
 
-Located in `summaries/`, this directory contains comprehensive, university-grade analytical study guides for the **entirety of the library (66 books)** in both **English** (`summaries/english/`) and **Arabic** (`summaries/arabic/`).
+Located in `summaries/`, this directory contains comprehensive, university-grade analytical study guides for the **entirety of the library (67 books)** in both **English** (`summaries/english/`) and **Arabic** (`summaries/arabic/`).
 
 To eliminate physical scrolling fatigue on the Nokia 215 4G keypad, the summaries are ergonomically organized into **9 thematic sub-categories**:
 
 1. **`01_Computer_Science/`**:
    - *The Pragmatic Programmer* (Official 20th Anniv. Tips & Craftsmanship)
    - *Programming: Principles and Practice Using C++* (Stroustrup C++20/C++23)
+   - *Cracking the Coding Interview* (6th Edition - 189 Programming Questions & Solutions)
 2. **`02_Productivity_And_Finance/`**:
    - *Atomic Habits* (The 4 Laws, Inversion Framework, 2-Minute Rule)
    - *The Psychology of Money* (All 20 Core Lessons & Behavioral Principles)

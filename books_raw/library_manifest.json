@@ -2,7 +2,7 @@
   "audit_timestamp": "2026-10-06 14:57:40",
   "verification_standard": "Strict Literary Authenticity Audit (Verified publishers & translators)",
   "arabic_count": 44,
-  "english_count": 36,
+  "english_count": 37,
   "arabic_editions": [
     {
       "filename": "1984_Arabic_George_Orwell.epub",
@@ -405,6 +405,13 @@
       "filename": "The_Picture_Of_Dorian_Gray_Wilde.epub",
       "size_bytes": 461435,
       "format": "EPUB"
+    },
+    {
+      "filename": "cracking_the_coding_interview_6th_retail.epub",
+      "size_bytes": 3051353,
+      "format": "EPUB",
+      "edition": "6th Edition (189 Programming Questions and Solutions)",
+      "author": "Gayle Laakmann McDowell"
     }
   ]
 }

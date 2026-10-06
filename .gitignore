@@ -18,6 +18,7 @@ books_raw/*.epub
 books_raw/*.pdf
 books_raw/*.mobi
 books_raw/*.azw3
+books_raw/*.txt
 
 # OS metadata
 .DS_Store

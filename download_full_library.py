@@ -456,6 +456,11 @@ ENGLISH_DOWNLOADS = [
         "title": "Dune by Frank Herbert",
         "url": "https://archive.org/download/frank-herberts-dune-saga-collection-books-1-6-by-frank-herbert-z-lib.org/Frank%20Herberts%20Dune%20Saga%20Collection%20Books%201%20-%206%20by%20Frank%20Herbert%20(z-lib.org).epub",
         "filename": "Dune_Frank_Herbert.epub"
+    },
+    {
+        "title": "Cracking the Coding Interview (6th Edition) by Gayle Laakmann McDowell",
+        "url": "https://archive.org/download/codingbookmanav/Cracking%20the%20Coding%20Interview%20-%20189%20Programming%20Questions%20and%20Solutions%20%286th%20Edition%29.epub",
+        "filename": "cracking_the_coding_interview_6th_retail.epub"
     }
 ]
 
