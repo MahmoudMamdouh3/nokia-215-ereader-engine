@@ -1,560 +1,410 @@
 {
-  "updated_at": "2026-10-06 14:38:54",
-  "arabic_books": [
+  "audit_timestamp": "2026-10-06 14:57:40",
+  "verification_standard": "Strict Literary Authenticity Audit (Verified publishers & translators)",
+  "arabic_count": 44,
+  "english_count": 36,
+  "arabic_editions": [
     {
-      "title": "Atomic Habits (العادات الذرية - مكتبة جرير)",
-      "filename": "Atomic_Habits_Arabic_Jarir.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Atomic_Habits_Arabic_Jarir.epub",
-      "size_bytes": 4227902,
-      "status": "Verified"
-    },
-    {
-      "title": "The Psychology of Money (سيكولوجية المال - مكتبة جرير)",
-      "filename": "Psychology_Of_Money_Arabic_Jarir.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Psychology_Of_Money_Arabic_Jarir.epub",
-      "size_bytes": 836700,
-      "status": "Verified"
-    },
-    {
-      "title": "The Trial (المحاكمة - فرانز كافكا)",
-      "filename": "The_Trial_Arabic_Kafka.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Trial_Arabic_Kafka.epub",
-      "size_bytes": 4736284,
-      "status": "Verified"
-    },
-    {
-      "title": "White Nights (الليالي البيضاء - فيودور دوستويفسكي)",
-      "filename": "White_Nights_Arabic_Dostoevsky.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\White_Nights_Arabic_Dostoevsky.epub",
-      "size_bytes": 896422,
-      "status": "Verified"
-    },
-    {
-      "title": "The 48 Laws of Power (قواعد السطوة - روبرت جرين)",
-      "filename": "48_Laws_Of_Power_Arabic.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\48_Laws_Of_Power_Arabic.pdf",
-      "size_bytes": 21203563,
-      "status": "Verified"
-    },
-    {
-      "title": "How to Win Friends and Influence People (كيف تكسب الأصدقاء - ديل كارنيجي)",
-      "filename": "How_To_Win_Friends_Arabic.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\How_To_Win_Friends_Arabic.pdf",
-      "size_bytes": 2647027,
-      "status": "Verified"
-    },
-    {
-      "title": "1984 (١٩٨٤ - جورج أورويل)",
       "filename": "1984_Arabic_George_Orwell.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\1984_Arabic_George_Orwell.epub",
       "size_bytes": 371499,
-      "status": "Verified"
+      "format": "EPUB"
     },
     {
-      "title": "Animal Farm (مزرعة الحيوان - جورج أورويل)",
-      "filename": "Animal_Farm_Arabic_George_Orwell.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Animal_Farm_Arabic_George_Orwell.epub",
-      "size_bytes": 116409,
-      "status": "Verified"
+      "filename": "48_Laws_Of_Power_Arabic.pdf",
+      "size_bytes": 21203563,
+      "format": "PDF"
     },
     {
-      "title": "Crime and Punishment - Part 1 (الجريمة والعقاب ج1 - ترجمة سامي الدروبي)",
-      "filename": "Crime_And_Punishment_Arabic_Vol1_Sami_Droubi.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Crime_And_Punishment_Arabic_Vol1_Sami_Droubi.epub",
-      "size_bytes": 798428,
-      "status": "Verified"
-    },
-    {
-      "title": "Crime and Punishment - Part 2 (الجريمة والعقاب ج2 - ترجمة سامي الدروبي)",
-      "filename": "Crime_And_Punishment_Arabic_Vol2_Sami_Droubi.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Crime_And_Punishment_Arabic_Vol2_Sami_Droubi.epub",
-      "size_bytes": 776028,
-      "status": "Verified"
-    },
-    {
-      "title": "The Stranger (الغريب - ألبير كامو)",
-      "filename": "The_Stranger_Arabic_Albert_Camus.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Stranger_Arabic_Albert_Camus.epub",
-      "size_bytes": 170978,
-      "status": "Verified"
-    },
-    {
-      "title": "The Old Man and the Sea (الشيخ والبحر - إرنست همنغواي)",
-      "filename": "The_Old_Man_And_The_Sea_Arabic.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Old_Man_And_The_Sea_Arabic.pdf",
-      "size_bytes": 1966549,
-      "status": "Verified"
-    },
-    {
-      "title": "The Metamorphosis (التحول / الانمساخ - فرانز كافكا)",
-      "filename": "The_Metamorphosis_Arabic_Kafka.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Metamorphosis_Arabic_Kafka.epub",
-      "size_bytes": 160180,
-      "status": "Verified"
-    },
-    {
-      "title": "The Castle (القلعة - فرانز كافكا)",
-      "filename": "The_Castle_Arabic_Kafka.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Castle_Arabic_Kafka.epub",
-      "size_bytes": 1304659,
-      "status": "Verified"
-    },
-    {
-      "title": "The Holy Bible (الكتاب المقدس - الترجمة المشتركة GNA)",
-      "filename": "The_Holy_Bible_Arabic_Ecumenical.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Holy_Bible_Arabic_Ecumenical.epub",
-      "size_bytes": 3460703,
-      "status": "Verified"
-    },
-    {
-      "title": "Don Quixote (دون كيشوت - ميغيل دي ثيربانتس)",
-      "filename": "Don_Quixote_Arabic_Cervantes.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Don_Quixote_Arabic_Cervantes.epub",
-      "size_bytes": 22728119,
-      "status": "Verified"
-    },
-    {
-      "title": "The Catcher in the Rye (الحارس في حقل الشوفان - سالينجر)",
-      "filename": "The_Catcher_In_The_Rye_Arabic_Salinger.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Catcher_In_The_Rye_Arabic_Salinger.epub",
-      "size_bytes": 552506,
-      "status": "Verified"
-    },
-    {
-      "title": "The Brothers Karamazov (الإخوة كارامازوف - ترجمة سامي الدروبي)",
-      "filename": "The_Brothers_Karamazov_Arabic_Sami_Droubi.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Brothers_Karamazov_Arabic_Sami_Droubi.epub",
-      "size_bytes": 1201918,
-      "status": "Verified"
-    },
-    {
-      "title": "War and Peace (الحرب والسلام - ترجمة سامي الدروبي - كاملة)",
-      "filename": "War_And_Peace_Arabic_Sami_Droubi_Complete.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\War_And_Peace_Arabic_Sami_Droubi_Complete.epub",
-      "size_bytes": 62920401,
-      "status": "Verified"
-    },
-    {
-      "title": "Anna Karenina (آنا كارينينا - ترجمة سامي الدروبي)",
-      "filename": "Anna_Karenina_Arabic_Sami_Droubi.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Anna_Karenina_Arabic_Sami_Droubi.epub",
-      "size_bytes": 1260023,
-      "status": "Verified"
-    },
-    {
-      "title": "Moby-Dick (موبي ديك - ترجمة إحسان عباس)",
-      "filename": "Moby_Dick_Arabic_Ihsan_Abbas.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Moby_Dick_Arabic_Ihsan_Abbas.epub",
-      "size_bytes": 5588001,
-      "status": "Verified"
-    },
-    {
-      "title": "Madame Bovary (مدام بوفاري - غوستاف فلوبير)",
-      "filename": "Madame_Bovary_Arabic_Flaubert.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Madame_Bovary_Arabic_Flaubert.epub",
-      "size_bytes": 10899209,
-      "status": "Verified"
-    },
-    {
-      "title": "The Divine Comedy (الكوميديا الإلهية - دانتي - ترجمة حسن عثمان)",
-      "filename": "The_Divine_Comedy_Arabic_Hassan_Osman.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Divine_Comedy_Arabic_Hassan_Osman.epub",
-      "size_bytes": 28050074,
-      "status": "Verified"
-    },
-    {
-      "title": "The Magic Mountain (الجبل السحري - توماس مان)",
-      "filename": "The_Magic_Mountain_Arabic_Thomas_Mann.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Magic_Mountain_Arabic_Thomas_Mann.epub",
-      "size_bytes": 4984355,
-      "status": "Verified"
-    },
-    {
-      "title": "The Odyssey (الأوديسة - هوميروس - ترجمة دريني خشبة)",
-      "filename": "The_Odyssey_Arabic_Derini_Khashaba.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Odyssey_Arabic_Derini_Khashaba.epub",
-      "size_bytes": 436952,
-      "status": "Verified"
-    },
-    {
-      "title": "The Iliad (الإلياذة - هوميروس - ترجمة دريني خشبة)",
-      "filename": "The_Iliad_Arabic_Derini_Khashaba.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Iliad_Arabic_Derini_Khashaba.epub",
-      "size_bytes": 4177370,
-      "status": "Verified"
-    },
-    {
-      "title": "To the Lighthouse (إلى الفنار - فرجينيا وولف - ترجمة إيزابيل كمال)",
-      "filename": "To_The_Lighthouse_Arabic_Virginia_Woolf.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\To_The_Lighthouse_Arabic_Virginia_Woolf.epub",
-      "size_bytes": 1186137,
-      "status": "Verified"
-    },
-    {
-      "title": "The Grapes of Wrath (عناقيد الغضب - جون شتاينبك)",
-      "filename": "The_Grapes_Of_Wrath_Arabic_Steinbeck.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Grapes_Of_Wrath_Arabic_Steinbeck.epub",
-      "size_bytes": 0,
-      "status": "Missing"
-    },
-    {
-      "title": "Alice's Adventures in Wonderland (أليس في بلاد العجائب - لويس كارول)",
       "filename": "Alices_Adventures_Arabic_Lewis_Carroll.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Alices_Adventures_Arabic_Lewis_Carroll.epub",
       "size_bytes": 4449376,
-      "status": "Verified"
+      "format": "EPUB"
     },
     {
-      "title": "Les Misérables (البؤساء - فيكتور هوغو - ترجمة منير بعلبكي)",
-      "filename": "Les_Miserables_Arabic_Munir_Baalbaki.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Les_Miserables_Arabic_Munir_Baalbaki.epub",
-      "size_bytes": 683449,
-      "status": "Verified"
+      "filename": "Animal_Farm_Arabic_George_Orwell.epub",
+      "size_bytes": 116409,
+      "format": "EPUB"
     },
     {
-      "title": "The Little Prince (الأمير الصغير - أنطوان دو سانت إكزوبيري)",
-      "filename": "The_Little_Prince_Arabic_Saint_Exupery.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Little_Prince_Arabic_Saint_Exupery.epub",
-      "size_bytes": 1153879,
-      "status": "Verified"
+      "filename": "Anna_Karenina_Arabic_Sami_Droubi.epub",
+      "size_bytes": 1260023,
+      "format": "EPUB"
     },
     {
-      "title": "The Picture of Dorian Gray (صورة دوريان غراي - أوسكار وايلد)",
-      "filename": "The_Picture_Of_Dorian_Gray_Arabic_Oscar_Wilde.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Picture_Of_Dorian_Gray_Arabic_Oscar_Wilde.epub",
-      "size_bytes": 537182,
-      "status": "Verified"
+      "filename": "Atomic_Habits_Arabic_Jarir.epub",
+      "size_bytes": 4227902,
+      "format": "EPUB"
     },
     {
-      "title": "One Thousand and One Nights (ألف ليلة وليلة - النسخة الكاملة)",
-      "filename": "One_Thousand_And_One_Nights_Arabic_Complete.epub",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\One_Thousand_And_One_Nights_Arabic_Complete.epub",
-      "size_bytes": 4528960,
-      "status": "Verified"
-    },
-    {
-      "title": "One Hundred Years of Solitude (مئة عام من العزلة - صالح علماني)",
-      "filename": "One_Hundred_Years_Of_Solitude_Arabic_Saleh_Almani.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\One_Hundred_Years_Of_Solitude_Arabic_Saleh_Almani.pdf",
-      "size_bytes": 0,
-      "status": "Missing"
-    },
-    {
-      "title": "Lolita (لوليتا - فلاديمير نابوكوف)",
-      "filename": "Lolita_Arabic_Vladimir_Nabokov.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Lolita_Arabic_Vladimir_Nabokov.pdf",
-      "size_bytes": 7307402,
-      "status": "Verified"
-    },
-    {
-      "title": "The Lord of the Rings (سيد الخواتم - دار نهضة مصر)",
-      "filename": "The_Lord_Of_The_Rings_Arabic_Nahdet_Misr.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Lord_Of_The_Rings_Arabic_Nahdet_Misr.pdf",
-      "size_bytes": 13674248,
-      "status": "Verified"
-    },
-    {
-      "title": "To Kill a Mockingbird (لا تقتل عصفورا ساخرا - هاربر لي)",
-      "filename": "To_Kill_A_Mockingbird_Arabic_Harper_Lee.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\To_Kill_A_Mockingbird_Arabic_Harper_Lee.pdf",
-      "size_bytes": 15143198,
-      "status": "Verified"
-    },
-    {
-      "title": "Frankenstein (فرانكنشتاين - ماري شيلي)",
-      "filename": "Frankenstein_Arabic_Mary_Shelley.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Frankenstein_Arabic_Mary_Shelley.pdf",
-      "size_bytes": 336834,
-      "status": "Verified"
-    },
-    {
-      "title": "Beloved (محبوبة - توني موريسون)",
       "filename": "Beloved_Arabic_Toni_Morrison.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Beloved_Arabic_Toni_Morrison.pdf",
       "size_bytes": 6683636,
-      "status": "Verified"
+      "format": "PDF"
     },
     {
-      "title": "David Copperfield (ديفيد كوبرفيلد - تشارلز ديكنز)",
-      "filename": "David_Copperfield_Arabic_Charles_Dickens.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\David_Copperfield_Arabic_Charles_Dickens.pdf",
-      "size_bytes": 18631228,
-      "status": "Verified"
-    },
-    {
-      "title": "The Red and the Black (الأحمر والأسود - ستندال)",
-      "filename": "The_Red_And_The_Black_Arabic_Stendhal.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Red_And_The_Black_Arabic_Stendhal.pdf",
-      "size_bytes": 6581937,
-      "status": "Verified"
-    },
-    {
-      "title": "Brave New World (عالم جديد شجاع - ألدوس هكسلي)",
       "filename": "Brave_New_World_Arabic_Aldous_Huxley.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\Brave_New_World_Arabic_Aldous_Huxley.pdf",
       "size_bytes": 4524598,
-      "status": "Verified"
+      "format": "PDF"
     },
     {
-      "title": "The Master and Margarita (الشيطان يزور موسكو - بولغاكوف)",
+      "filename": "Crime_And_Punishment_Arabic_Vol1_Sami_Droubi.epub",
+      "size_bytes": 798428,
+      "format": "EPUB"
+    },
+    {
+      "filename": "Crime_And_Punishment_Arabic_Vol2_Sami_Droubi.epub",
+      "size_bytes": 776028,
+      "format": "EPUB"
+    },
+    {
+      "filename": "David_Copperfield_Arabic_Charles_Dickens.pdf",
+      "size_bytes": 18631228,
+      "format": "PDF"
+    },
+    {
+      "filename": "Don_Quixote_Arabic_Cervantes.epub",
+      "size_bytes": 22728119,
+      "format": "EPUB"
+    },
+    {
+      "filename": "Frankenstein_Arabic_Mary_Shelley.pdf",
+      "size_bytes": 336834,
+      "format": "PDF"
+    },
+    {
+      "filename": "How_To_Win_Friends_Arabic.pdf",
+      "size_bytes": 2647027,
+      "format": "PDF"
+    },
+    {
+      "filename": "Les_Miserables_Arabic_Munir_Baalbaki.epub",
+      "size_bytes": 683449,
+      "format": "EPUB"
+    },
+    {
+      "filename": "Lolita_Arabic_Vladimir_Nabokov.pdf",
+      "size_bytes": 7307402,
+      "format": "PDF"
+    },
+    {
+      "filename": "Madame_Bovary_Arabic_Flaubert.epub",
+      "size_bytes": 10899209,
+      "format": "EPUB"
+    },
+    {
+      "filename": "Moby_Dick_Arabic_Ihsan_Abbas.epub",
+      "size_bytes": 5588001,
+      "format": "EPUB"
+    },
+    {
+      "filename": "One_Hundred_Years_Of_Solitude_Arabic_Marquez.epub",
+      "size_bytes": 283969,
+      "format": "EPUB"
+    },
+    {
+      "filename": "One_Thousand_And_One_Nights_Arabic_Complete.epub",
+      "size_bytes": 4528960,
+      "format": "EPUB"
+    },
+    {
+      "filename": "Psychology_Of_Money_Arabic_Jarir.epub",
+      "size_bytes": 836700,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Brothers_Karamazov_Arabic_Sami_Droubi.epub",
+      "size_bytes": 1201918,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Castle_Arabic_Kafka.epub",
+      "size_bytes": 1304659,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Catcher_In_The_Rye_Arabic_Salinger.epub",
+      "size_bytes": 552506,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Divine_Comedy_Arabic_Hassan_Osman.epub",
+      "size_bytes": 28050074,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Grapes_Of_Wrath_Arabic_Steinbeck.epub",
+      "size_bytes": 1703727,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Holy_Bible_Arabic_Ecumenical.epub",
+      "size_bytes": 3460703,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Iliad_Arabic_Derini_Khashaba.epub",
+      "size_bytes": 4177370,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Little_Prince_Arabic_Saint_Exupery.epub",
+      "size_bytes": 1153879,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Lord_Of_The_Rings_Arabic_Nahdet_Misr.pdf",
+      "size_bytes": 13674248,
+      "format": "PDF"
+    },
+    {
+      "filename": "The_Magic_Mountain_Arabic_Thomas_Mann.epub",
+      "size_bytes": 4984355,
+      "format": "EPUB"
+    },
+    {
       "filename": "The_Master_And_Margarita_Arabic_Bulgakov.pdf",
-      "path": "E:\\nokia\\books_raw\\arabic_editions\\The_Master_And_Margarita_Arabic_Bulgakov.pdf",
       "size_bytes": 7401210,
-      "status": "Verified"
+      "format": "PDF"
+    },
+    {
+      "filename": "The_Metamorphosis_Arabic_Franz_Kafka.pdf",
+      "size_bytes": 1720639,
+      "format": "PDF"
+    },
+    {
+      "filename": "The_Odyssey_Arabic_Derini_Khashaba.epub",
+      "size_bytes": 436952,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Old_Man_And_The_Sea_Arabic.pdf",
+      "size_bytes": 1966549,
+      "format": "PDF"
+    },
+    {
+      "filename": "The_Picture_Of_Dorian_Gray_Arabic_Oscar_Wilde.epub",
+      "size_bytes": 537182,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Red_And_The_Black_Arabic_Stendhal.pdf",
+      "size_bytes": 6581937,
+      "format": "PDF"
+    },
+    {
+      "filename": "The_Stranger_Arabic_Albert_Camus.epub",
+      "size_bytes": 170978,
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Trial_Arabic_Kafka.epub",
+      "size_bytes": 4736284,
+      "format": "EPUB"
+    },
+    {
+      "filename": "To_Kill_A_Mockingbird_Arabic_Harper_Lee.pdf",
+      "size_bytes": 15143198,
+      "format": "PDF"
+    },
+    {
+      "filename": "To_The_Lighthouse_Arabic_Virginia_Woolf.epub",
+      "size_bytes": 1186137,
+      "format": "EPUB"
+    },
+    {
+      "filename": "Ulysses_Arabic_Salah_Niazi.pdf",
+      "size_bytes": 16504706,
+      "format": "PDF"
+    },
+    {
+      "filename": "War_And_Peace_Arabic_Sami_Droubi_Complete.epub",
+      "size_bytes": 62920401,
+      "format": "EPUB"
+    },
+    {
+      "filename": "White_Nights_Arabic_Dostoevsky.epub",
+      "size_bytes": 896422,
+      "format": "EPUB"
     }
   ],
-  "english_books": [
+  "english_editions": [
     {
-      "title": "Ulysses by James Joyce",
       "filename": "01_Ulysses_James_Joyce.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\01_Ulysses_James_Joyce.epub",
       "size_bytes": 1494555,
-      "status": "Verified"
+      "format": "EPUB"
     },
     {
-      "title": "In Search of Lost Time: Swann's Way by Marcel Proust",
       "filename": "02_In_Search_Of_Lost_Time_Swanns_Way_Proust.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\02_In_Search_Of_Lost_Time_Swanns_Way_Proust.epub",
-      "size_bytes": 165356,
-      "status": "Verified"
+      "size_bytes": 522829,
+      "format": "EPUB"
     },
     {
-      "title": "The Great Gatsby by F. Scott Fitzgerald",
       "filename": "03_The_Great_Gatsby_Fitzgerald.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\03_The_Great_Gatsby_Fitzgerald.epub",
       "size_bytes": 353457,
-      "status": "Verified"
+      "format": "EPUB"
     },
     {
-      "title": "Moby-Dick by Herman Melville",
-      "filename": "06_Moby_Dick_Herman_Melville.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\06_Moby_Dick_Herman_Melville.epub",
-      "size_bytes": 814108,
-      "status": "Verified"
-    },
-    {
-      "title": "Don Quixote by Miguel de Cervantes",
-      "filename": "08_Don_Quixote_Cervantes.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\08_Don_Quixote_Cervantes.epub",
-      "size_bytes": 46093367,
-      "status": "Verified"
-    },
-    {
-      "title": "Anna Karenina by Leo Tolstoy",
-      "filename": "10_Anna_Karenina_Leo_Tolstoy.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\10_Anna_Karenina_Leo_Tolstoy.epub",
-      "size_bytes": 1029762,
-      "status": "Verified"
-    },
-    {
-      "title": "War and Peace by Leo Tolstoy",
-      "filename": "12_War_And_Peace_Leo_Tolstoy.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\12_War_And_Peace_Leo_Tolstoy.epub",
-      "size_bytes": 1832521,
-      "status": "Verified"
-    },
-    {
-      "title": "Crime and Punishment by Fyodor Dostoevsky",
-      "filename": "13_Crime_And_Punishment_Dostoevsky.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\13_Crime_And_Punishment_Dostoevsky.epub",
-      "size_bytes": 783871,
-      "status": "Verified"
-    },
-    {
-      "title": "Wuthering Heights by Emily Brontë",
-      "filename": "14_Wuthering_Heights_Emily_Bronte.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\14_Wuthering_Heights_Emily_Bronte.epub",
-      "size_bytes": 587952,
-      "status": "Verified"
-    },
-    {
-      "title": "Pride and Prejudice by Jane Austen",
-      "filename": "15_Pride_And_Prejudice_Jane_Austen.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\15_Pride_And_Prejudice_Jane_Austen.epub",
-      "size_bytes": 24836548,
-      "status": "Verified"
-    },
-    {
-      "title": "The Brothers Karamazov by Fyodor Dostoevsky",
-      "filename": "18_The_Brothers_Karamazov_Dostoevsky.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\18_The_Brothers_Karamazov_Dostoevsky.epub",
-      "size_bytes": 1163433,
-      "status": "Verified"
-    },
-    {
-      "title": "Madame Bovary by Gustave Flaubert",
-      "filename": "19_Madame_Bovary_Flaubert.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\19_Madame_Bovary_Flaubert.epub",
-      "size_bytes": 449079,
-      "status": "Verified"
-    },
-    {
-      "title": "Adventures of Huckleberry Finn by Mark Twain",
-      "filename": "22_Huckleberry_Finn_Mark_Twain.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\22_Huckleberry_Finn_Mark_Twain.epub",
-      "size_bytes": 16021345,
-      "status": "Verified"
-    },
-    {
-      "title": "Middlemarch by George Eliot",
-      "filename": "24_Middlemarch_George_Eliot.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\24_Middlemarch_George_Eliot.epub",
-      "size_bytes": 1072344,
-      "status": "Verified"
-    },
-    {
-      "title": "The Odyssey by Homer",
-      "filename": "26_The_Odyssey_Homer.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\26_The_Odyssey_Homer.epub",
-      "size_bytes": 445840,
-      "status": "Verified"
-    },
-    {
-      "title": "The Divine Comedy by Dante Alighieri",
-      "filename": "28_The_Divine_Comedy_Dante.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\28_The_Divine_Comedy_Dante.epub",
-      "size_bytes": 30749739,
-      "status": "Verified"
-    },
-    {
-      "title": "Jane Eyre by Charlotte Brontë",
-      "filename": "30_Jane_Eyre_Charlotte_Bronte.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\30_Jane_Eyre_Charlotte_Bronte.epub",
-      "size_bytes": 3095830,
-      "status": "Verified"
-    },
-    {
-      "title": "Heart of Darkness by Joseph Conrad",
-      "filename": "31_Heart_Of_Darkness_Joseph_Conrad.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\31_Heart_Of_Darkness_Joseph_Conrad.epub",
-      "size_bytes": 164310,
-      "status": "Verified"
-    },
-    {
-      "title": "Alice's Adventures in Wonderland by Lewis Carroll",
-      "filename": "36_Alices_Adventures_In_Wonderland_Carroll.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\36_Alices_Adventures_In_Wonderland_Carroll.epub",
-      "size_bytes": 189249,
-      "status": "Verified"
-    },
-    {
-      "title": "The Iliad by Homer",
-      "filename": "37_The_Iliad_Homer.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\37_The_Iliad_Homer.epub",
-      "size_bytes": 2292201,
-      "status": "Verified"
-    },
-    {
-      "title": "Great Expectations by Charles Dickens",
-      "filename": "38_Great_Expectations_Dickens.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\38_Great_Expectations_Dickens.epub",
-      "size_bytes": 14385491,
-      "status": "Verified"
-    },
-    {
-      "title": "Frankenstein by Mary Shelley",
-      "filename": "39_Frankenstein_Mary_Shelley.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\39_Frankenstein_Mary_Shelley.epub",
-      "size_bytes": 474733,
-      "status": "Verified"
-    },
-    {
-      "title": "Les Misérables by Victor Hugo",
-      "filename": "40_Les_Miserables_Victor_Hugo.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\40_Les_Miserables_Victor_Hugo.epub",
-      "size_bytes": 10130252,
-      "status": "Verified"
-    },
-    {
-      "title": "The Red and the Black by Stendhal",
-      "filename": "43_The_Red_And_The_Black_Stendhal.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\43_The_Red_And_The_Black_Stendhal.epub",
-      "size_bytes": 695007,
-      "status": "Verified"
-    },
-    {
-      "title": "David Copperfield by Charles Dickens",
-      "filename": "48_David_Copperfield_Dickens.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\48_David_Copperfield_Dickens.epub",
-      "size_bytes": 9414995,
-      "status": "Verified"
-    },
-    {
-      "title": "The Picture of Dorian Gray by Oscar Wilde",
-      "filename": "The_Picture_Of_Dorian_Gray_Wilde.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\The_Picture_Of_Dorian_Gray_Wilde.epub",
-      "size_bytes": 461435,
-      "status": "Verified"
-    },
-    {
-      "title": "The Holy Bible (World English Bible / KJV - Project Gutenberg)",
-      "filename": "21_The_Holy_Bible_English.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\21_The_Holy_Bible_English.epub",
-      "size_bytes": 1717117,
-      "status": "Verified"
-    },
-    {
-      "title": "Arabian Nights (One Thousand and One Nights)",
-      "filename": "47_Arabian_Nights_English.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\47_Arabian_Nights_English.epub",
-      "size_bytes": 1035251,
-      "status": "Verified"
-    },
-    {
-      "title": "Nineteen Eighty-Four by George Orwell",
-      "filename": "07_1984_George_Orwell.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\07_1984_George_Orwell.epub",
-      "size_bytes": 558555,
-      "status": "Verified"
-    },
-    {
-      "title": "Animal Farm by George Orwell",
-      "filename": "Animal_Farm_George_Orwell.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\Animal_Farm_George_Orwell.epub",
-      "size_bytes": 127971,
-      "status": "Verified"
-    },
-    {
-      "title": "The Stranger by Albert Camus (Matthew Ward Translation)",
-      "filename": "23_The_Stranger_Albert_Camus.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\23_The_Stranger_Albert_Camus.epub",
-      "size_bytes": 196305,
-      "status": "Verified"
-    },
-    {
-      "title": "The Catcher in the Rye by J.D. Salinger",
-      "filename": "05_The_Catcher_In_The_Rye_Salinger.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\05_The_Catcher_In_The_Rye_Salinger.epub",
-      "size_bytes": 97106760,
-      "status": "Verified"
-    },
-    {
-      "title": "The Lord of the Rings by J.R.R. Tolkien (HarperCollins Complete Edition)",
-      "filename": "17_The_Lord_Of_The_Rings_Tolkien.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\17_The_Lord_Of_The_Rings_Tolkien.epub",
-      "size_bytes": 3760618,
-      "status": "Verified"
-    },
-    {
-      "title": "One Hundred Years of Solitude by Gabriel García Márquez",
       "filename": "04_One_Hundred_Years_Of_Solitude_Marquez.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\04_One_Hundred_Years_Of_Solitude_Marquez.epub",
       "size_bytes": 189730822,
-      "status": "Verified"
+      "format": "EPUB"
     },
     {
-      "title": "Brave New World by Aldous Huxley",
+      "filename": "05_The_Catcher_In_The_Rye_Salinger.epub",
+      "size_bytes": 97106760,
+      "format": "EPUB"
+    },
+    {
+      "filename": "06_Moby_Dick_Herman_Melville.epub",
+      "size_bytes": 814108,
+      "format": "EPUB"
+    },
+    {
+      "filename": "07_1984_George_Orwell.epub",
+      "size_bytes": 558555,
+      "format": "EPUB"
+    },
+    {
+      "filename": "08_Don_Quixote_Cervantes.epub",
+      "size_bytes": 46093367,
+      "format": "EPUB"
+    },
+    {
+      "filename": "10_Anna_Karenina_Leo_Tolstoy.epub",
+      "size_bytes": 1029762,
+      "format": "EPUB"
+    },
+    {
+      "filename": "12_War_And_Peace_Leo_Tolstoy.epub",
+      "size_bytes": 1832521,
+      "format": "EPUB"
+    },
+    {
+      "filename": "13_Crime_And_Punishment_Dostoevsky.epub",
+      "size_bytes": 783871,
+      "format": "EPUB"
+    },
+    {
+      "filename": "14_Wuthering_Heights_Emily_Bronte.epub",
+      "size_bytes": 587952,
+      "format": "EPUB"
+    },
+    {
+      "filename": "15_Pride_And_Prejudice_Jane_Austen.epub",
+      "size_bytes": 24836548,
+      "format": "EPUB"
+    },
+    {
+      "filename": "17_The_Lord_Of_The_Rings_Tolkien.epub",
+      "size_bytes": 3760618,
+      "format": "EPUB"
+    },
+    {
+      "filename": "18_The_Brothers_Karamazov_Dostoevsky.epub",
+      "size_bytes": 1163433,
+      "format": "EPUB"
+    },
+    {
+      "filename": "19_Madame_Bovary_Flaubert.epub",
+      "size_bytes": 449079,
+      "format": "EPUB"
+    },
+    {
+      "filename": "21_The_Holy_Bible_English.epub",
+      "size_bytes": 1717117,
+      "format": "EPUB"
+    },
+    {
+      "filename": "22_Huckleberry_Finn_Mark_Twain.epub",
+      "size_bytes": 16021345,
+      "format": "EPUB"
+    },
+    {
+      "filename": "23_The_Stranger_Albert_Camus.epub",
+      "size_bytes": 196305,
+      "format": "EPUB"
+    },
+    {
+      "filename": "24_Middlemarch_George_Eliot.epub",
+      "size_bytes": 1072344,
+      "format": "EPUB"
+    },
+    {
+      "filename": "26_The_Odyssey_Homer.epub",
+      "size_bytes": 445840,
+      "format": "EPUB"
+    },
+    {
+      "filename": "28_The_Divine_Comedy_Dante.epub",
+      "size_bytes": 30749739,
+      "format": "EPUB"
+    },
+    {
+      "filename": "30_Jane_Eyre_Charlotte_Bronte.epub",
+      "size_bytes": 3095830,
+      "format": "EPUB"
+    },
+    {
+      "filename": "31_Heart_Of_Darkness_Joseph_Conrad.epub",
+      "size_bytes": 164310,
+      "format": "EPUB"
+    },
+    {
+      "filename": "36_Alices_Adventures_In_Wonderland_Carroll.epub",
+      "size_bytes": 189249,
+      "format": "EPUB"
+    },
+    {
+      "filename": "37_The_Iliad_Homer.epub",
+      "size_bytes": 2292201,
+      "format": "EPUB"
+    },
+    {
+      "filename": "38_Great_Expectations_Dickens.epub",
+      "size_bytes": 14385491,
+      "format": "EPUB"
+    },
+    {
+      "filename": "39_Frankenstein_Mary_Shelley.epub",
+      "size_bytes": 474733,
+      "format": "EPUB"
+    },
+    {
+      "filename": "40_Les_Miserables_Victor_Hugo.epub",
+      "size_bytes": 10130252,
+      "format": "EPUB"
+    },
+    {
+      "filename": "43_The_Red_And_The_Black_Stendhal.epub",
+      "size_bytes": 695007,
+      "format": "EPUB"
+    },
+    {
+      "filename": "47_Arabian_Nights_English.epub",
+      "size_bytes": 1035251,
+      "format": "EPUB"
+    },
+    {
+      "filename": "48_David_Copperfield_Dickens.epub",
+      "size_bytes": 9414995,
+      "format": "EPUB"
+    },
+    {
       "filename": "50_Brave_New_World_Aldous_Huxley.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\50_Brave_New_World_Aldous_Huxley.epub",
       "size_bytes": 270577,
-      "status": "Verified"
+      "format": "EPUB"
     },
     {
-      "title": "Dune by Frank Herbert",
+      "filename": "Animal_Farm_George_Orwell.epub",
+      "size_bytes": 127971,
+      "format": "EPUB"
+    },
+    {
       "filename": "Dune_Frank_Herbert.epub",
-      "path": "E:\\nokia\\books_raw\\english_classics\\Dune_Frank_Herbert.epub",
       "size_bytes": 3234404,
-      "status": "Verified"
+      "format": "EPUB"
+    },
+    {
+      "filename": "The_Picture_Of_Dorian_Gray_Wilde.epub",
+      "size_bytes": 461435,
+      "format": "EPUB"
     }
   ]
 }
