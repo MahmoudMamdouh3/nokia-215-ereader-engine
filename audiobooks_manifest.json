@@ -14,7 +14,8 @@
     "EN_14",
     "EN_15",
     "EN_16",
-    "AR_01"
+    "AR_01",
+    "AR_02"
   ],
   "books": {
     "EN_01": {
@@ -165,6 +166,16 @@
       "folder": "01_Al_Adat_Al_Dharriyah_Atomic_Habits",
       "parts_installed": 15,
       "total_duration_minutes": 438,
+      "language": "Arabic"
+    },
+    "AR_02": {
+      "book": "سيكولوجية المال",
+      "author": "مورغان هاوسل",
+      "narrator": "كتاب صوتي كامل",
+      "category": "02_Arabic",
+      "folder": "02_Psychology_Of_Money_Arabic",
+      "parts_installed": 11,
+      "total_duration_minutes": 317,
       "language": "Arabic"
     }
   }
