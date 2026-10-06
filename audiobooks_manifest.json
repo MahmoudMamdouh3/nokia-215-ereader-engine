@@ -1,0 +1,17 @@
+{
+  "completed_audiobooks": [
+    "EN_01"
+  ],
+  "books": {
+    "EN_01": {
+      "book": "Atomic Habits",
+      "author": "James Clear",
+      "narrator": "James Clear (Original Author Voice)",
+      "category": "01_English",
+      "folder": "01_Atomic_Habits_James_Clear",
+      "parts_installed": 12,
+      "total_duration_minutes": 335,
+      "language": "English"
+    }
+  }
+}
