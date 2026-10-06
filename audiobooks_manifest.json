@@ -4,7 +4,8 @@
     "EN_02",
     "EN_03",
     "EN_05",
-    "EN_07"
+    "EN_07",
+    "EN_08"
   ],
   "books": {
     "EN_01": {
@@ -55,6 +56,16 @@
       "folder": "07_Mastery_Robert_Greene",
       "parts_installed": 9,
       "total_duration_minutes": 242,
+      "language": "English"
+    },
+    "EN_08": {
+      "book": "1984",
+      "author": "George Orwell",
+      "narrator": "Simon Prebble (Official Unabridged)",
+      "category": "01_English",
+      "folder": "08_1984_George_Orwell",
+      "parts_installed": 19,
+      "total_duration_minutes": 569,
       "language": "English"
     }
   }
