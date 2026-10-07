@@ -30,16 +30,16 @@ FONT_EN_BODY_PATH = r"C:\Windows\Fonts\georgia.ttf"
 FONT_EN_HEAD_PATH = r"C:\Windows\Fonts\arial.ttf"
 FONT_AR_BODY_PATH = os.path.join(FONTS_DIR, "Amiri-Regular.ttf")
 
-# Screen Specs
+# Screen Specs (Calibrated 240x280 for Nokia 215 4G S30+ Persistent UI)
 WIDTH = 240
-HEIGHT = 320
+HEIGHT = 280
 USABLE_WIDTH = 216
-USABLE_HEIGHT = 256
-HEADER_Y = 9
-HEADER_LINE_Y = 25
-BODY_TOP_Y = 33
-FOOTER_LINE_Y = 297
-FOOTER_Y = 302
+USABLE_HEIGHT = 224
+HEADER_Y = 7
+HEADER_LINE_Y = 23
+BODY_TOP_Y = 29
+FOOTER_LINE_Y = 257
+FOOTER_Y = 262
 
 def clean_en_text(text):
     text = text.replace('\r\n', '\n').replace('\r', '\n')
@@ -129,9 +129,9 @@ def render_en_pages(pages, chapter_dir, header_title, font_body, font_head, font
         y = BODY_TOP_Y
         for line, is_para_start in page_lines:
             if is_para_start:
-                y += 7
+                y += 6
             draw.text((12, y), line, fill=(15, 15, 15), font=font_body)
-            y += 21
+            y += 20
             
         # Footer
         draw.line([(12, FOOTER_LINE_Y), (228, FOOTER_LINE_Y)], fill=(225, 225, 225), width=1)
@@ -162,7 +162,7 @@ def build_white_nights():
     font_head = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     font_foot = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     
-    book_dir = os.path.join(OUT_DIR, "01_White_Nights")
+    book_dir = os.path.join(OUT_DIR, "05_Literary_Classics", "01_White_Nights")
     total_book_pages = 0
     
     for ch_folder, start_kw, end_kw in chapters:
@@ -210,7 +210,7 @@ def build_the_trial():
     font_head = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     font_foot = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     
-    book_dir = os.path.join(OUT_DIR, "02_The_Trial")
+    book_dir = os.path.join(OUT_DIR, "05_Literary_Classics", "02_The_Trial")
     total_book_pages = 0
 
     for i in range(len(splits)):
@@ -276,7 +276,7 @@ def build_atomic_habits():
     font_head = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     font_foot = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     
-    book_dir = os.path.join(OUT_DIR, "03_Atomic_Habits")
+    book_dir = os.path.join(OUT_DIR, "02_Productivity_And_Finance", "01_Atomic_Habits")
     total_book_pages = 0
 
     for ch_folder, sp, ep in chapters:
@@ -324,7 +324,7 @@ def build_psychology_of_money():
     font_head = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     font_foot = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     
-    book_dir = os.path.join(OUT_DIR, "04_The_Psychology_Of_Money")
+    book_dir = os.path.join(OUT_DIR, "02_Productivity_And_Finance", "02_The_Psychology_Of_Money")
     total_book_pages = 0
 
     for ch_folder, sp, ep in chapters:
@@ -383,7 +383,7 @@ def build_how_to_win_friends():
     font_head = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     font_foot = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     
-    book_dir = os.path.join(OUT_DIR, "05_How_To_Win_Friends_And_Influence_People")
+    book_dir = os.path.join(OUT_DIR, "02_Productivity_And_Finance", "03_How_To_Win_Friends_And_Influence_People")
     total_book_pages = 0
 
     for ch_folder, sp, ep in chapters:
@@ -424,7 +424,7 @@ def build_holy_quran_arabic():
     dummy_img = Image.new('RGB', (1, 1))
     draw = ImageDraw.Draw(dummy_img)
 
-    book_dir = os.path.join(OUT_DIR, "06_The_Holy_Quran_Arabic")
+    book_dir = os.path.join(OUT_DIR, "01_Quran_And_Tafsir", "01_The_Holy_Quran_Arabic")
     os.makedirs(book_dir, exist_ok=True)
     total_quran_pages = 0
 
@@ -466,8 +466,8 @@ def build_holy_quran_arabic():
         if cur_words:
             lines.append(' '.join(cur_words))
 
-        # 7-8 lines per page for Tashkeel readability
-        lines_per_page = 7
+        # 6 lines per page for optimal Tashkeel vertical breathing room in 240x280
+        lines_per_page = 6
         pages = [lines[i:i+lines_per_page] for i in range(0, len(lines), lines_per_page)]
         total_pages = len(pages)
         total_quran_pages += total_pages
@@ -487,8 +487,8 @@ def build_holy_quran_arabic():
             # Header
             bbox_h = draw_p.textbbox((0, 0), bidi_h, font=font_head)
             w_h = bbox_h[2] - bbox_h[0]
-            draw_p.text(((WIDTH - w_h) // 2, 7), bidi_h, fill=(80, 80, 80), font=font_head)
-            draw_p.line([(12, HEADER_LINE_Y + 4), (228, HEADER_LINE_Y + 4)], fill=(225, 225, 225), width=1)
+            draw_p.text(((WIDTH - w_h) // 2, HEADER_Y), bidi_h, fill=(80, 80, 80), font=font_head)
+            draw_p.line([(12, HEADER_LINE_Y), (228, HEADER_LINE_Y)], fill=(225, 225, 225), width=1)
 
             # Body lines
             y = BODY_TOP_Y + 4
@@ -521,7 +521,7 @@ def build_holy_quran_english():
     font_head = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     font_foot = ImageFont.truetype(FONT_EN_HEAD_PATH, 10)
     
-    book_dir = os.path.join(OUT_DIR, "07_The_Holy_Quran_English")
+    book_dir = os.path.join(OUT_DIR, "01_Quran_And_Tafsir", "02_The_Holy_Quran_English")
     os.makedirs(book_dir, exist_ok=True)
     total_quran_pages = 0
 
@@ -562,7 +562,7 @@ def main():
     build_psychology_of_money()
     build_how_to_win_friends()
     build_holy_quran_arabic()
-    # build_holy_quran_english() already clean and verified
+    build_holy_quran_english()
 
     print("\n==================================================")
     print(" ALL 6 BOOKS + QURAN (ARABIC & ENGLISH) FINISHED! ")

@@ -21,20 +21,21 @@ warnings.filterwarnings("ignore")
 
 BASE_DIR = r"E:\nokia"
 RAW_RG_DIR = os.path.join(BASE_DIR, "books_raw", "robert_greene")
-OUT_RG_DIR = os.path.join(BASE_DIR, "books_out", "Robert_Greene")
+OUT_RG_DIR = os.path.join(BASE_DIR, "books_out", "03_Power_And_Strategy")
 
 FONT_BODY_PATH = r"C:\Windows\Fonts\georgia.ttf"
 FONT_HEAD_PATH = r"C:\Windows\Fonts\arial.ttf"
 
+# Screen Specs (Calibrated 240x280 for Nokia 215 4G S30+ Persistent UI)
 WIDTH = 240
-HEIGHT = 320
+HEIGHT = 280
 USABLE_WIDTH = 216
-USABLE_HEIGHT = 256
-HEADER_Y = 9
-HEADER_LINE_Y = 25
-BODY_TOP_Y = 33
-FOOTER_LINE_Y = 297
-FOOTER_Y = 302
+USABLE_HEIGHT = 224
+HEADER_Y = 7
+HEADER_LINE_Y = 23
+BODY_TOP_Y = 29
+FOOTER_LINE_Y = 257
+FOOTER_Y = 262
 
 def clean_text(text):
     text = text.replace('\r\n', '\n').replace('\r', '\n')
@@ -118,9 +119,9 @@ def render_pages(pages, chapter_dir, header_title, font_body, font_head, font_fo
         y = BODY_TOP_Y
         for line, is_para_start in page_lines:
             if is_para_start:
-                y += 7
+                y += 6
             draw.text((12, y), line, fill=(15, 15, 15), font=font_body)
-            y += 21
+            y += 20
             
         # Footer
         draw.line([(12, FOOTER_LINE_Y), (228, FOOTER_LINE_Y)], fill=(225, 225, 225), width=1)

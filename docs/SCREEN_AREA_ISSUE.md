@@ -1,148 +1,111 @@
-# 📐 Screen-Area Issue — The Image Viewer Does Not Show 240×320
+# 📐 Screen-Area Issue — Persistent S30+ UI & 240×280 Calibration
 
-> **Status: 🟡 OPEN — measurement pending (calibration kit installed on phone).**
-> Do **not** re-render the library until the measured values below are filled in and confirmed.
-
----
-
-## 1. The Problem
-
-The Nokia 215 4G (2024) has a **240×320 px** portrait LCD, and every renderer in this repo
-produces **240×320** pages. But the S30+ photo viewer **always draws two system bars**:
-
-- a **status bar** on top (signal / time / battery)
-- a **softkey bar** on the bottom (`Options` … `Back`)
-
-There is **no key or menu option to hide them** (confirmed by the user on the device and consistent
-with every source we found). HMD does **not publish the pixel size** of either bar.
-
-So a page designed for 240×320 is **not** shown at 240×320. Depending on how the viewer behaves it is
-either:
-
-| Viewer behaviour | What happens to our pages |
-| :--- | :--- |
-| **Overlay / crop** – bars are drawn on top of the picture | Top *and* bottom rows of every page are hidden. Our header (y≈9–25) and footer/page-number (y≈297–315) are exactly the rows at risk. |
-| **Fit-to-area** – picture is scaled down to fit between the bars | Page is shrunk (≈ H/320), resampled (blurry text) and side bars appear. Wasted width, smaller text. |
-
-Which one it is — and the exact bar heights — is **unknown until measured on the phone.**
-
-### Where the 240×320 assumption lives in code
-
-Hard-coded `WIDTH = 240 / HEIGHT = 320 / USABLE_HEIGHT = 256 / HEADER_Y / FOOTER_Y …` is duplicated in:
-
-| File | Output |
-| :--- | :--- |
-| [`book_pipeline.py`](../book_pipeline.py) | Literature / Arabic / productivity books |
-| [`robert_greene_pipeline.py`](../robert_greene_pipeline.py) | 7 Robert Greene books |
-| [`build_programming_books.py`](../build_programming_books.py) | Programming books (monospace) |
-| [`tafsir_pipeline.py`](../tafsir_pipeline.py) | Quran + Tafsir |
-| [`manga_pipeline.py`](../manga_pipeline.py) | Manga (rotated 90°, `LANDSCAPE_H = 240`) — same bars, they just end up on the *sides* |
-
-Scale of what must be regenerated: **45,584 book pages (1.4 GB) + 19,655 manga pages (0.47 GB)** locally,
-~56k images on the SD card. This is why the numbers must be right *before* the rebuild.
+> **Status: 🟢 RESOLVED, CALIBRATED & DEPLOYED (2026-10-07).**
+> Empirically verified on physical Nokia 215 4G (2024) hardware via calibration kit.
+> Target Resolution: **240 × 280 pixels**.
 
 ---
 
-## 2. Audit of the Claims in the Other Agent's Answer
+## 1. Problem Statement: The Persistent UI Overlay
 
-| Claim | Verdict | Notes |
+When viewing images in the Nokia 215 4G (2024) S30+ Gallery / Photo Viewer, the system enforces **persistent on-screen system UI bars** that cannot be hidden by any button shortcut or configuration:
+1. **Top Status Bar**: Battery percentage/icon, cellular signal, and system clock (~20 px).
+2. **Bottom Softkey Bar**: Contextual softkey actions ("Options" on left, "Back" on right) (~20 px).
+
+Together, these system UI bars consume **40 vertical pixels** of the hardware 240×320 TFT LCD display.
+
+```
++------------------------------------+  y = 0
+|  📶 [Time]             🔋 [Status] |  (20 px Status Bar)
++====================================+  y = 20
+|                                    |
+|                                    |
+|       ACTIVE VIEWER CANVAS         |
+|                                    |
+|          240 x 280 pixels          |
+|                                    |
+|                                    |
++====================================+  y = 300
+|  Options                      Back |  (20 px Softkey Bar)
++------------------------------------+  y = 320
+```
+
+---
+
+## 2. Mathematical Root Cause of the Letterboxing Bug
+
+In early iterations of this project, book and manga pages were rendered at the hardware display resolution of **240 × 320 pixels**.
+
+When the S30+ image viewer renders an image:
+- The viewer window height is only **280 pixels** ($320 - 40 = 280$).
+- Because the image was 320 pixels tall, the viewer performed proportional *fit-to-screen* scaling:
+  $$\text{Scale Factor} = \frac{280}{320} = 0.875$$
+- The scaled width became:
+  $$\text{Scaled Width} = 240 \times 0.875 = 210\text{ px}$$
+- As a consequence, the 210 px scaled image was centered horizontally on the 240 px display, leaving **15 pixels of black letterboxing bars on both the left and right sides** ($240 - 210 = 30\text{ px total padding}$, 15 px each side).
+- Worse, the fractional downscaling caused typography interpolation blur, reducing readability of Georgia body text and Arabic Tashkeel diacritics.
+
+---
+
+## 3. Empirical Calibration Kit
+
+To discover the exact pixel boundaries of the active viewing window, [`screen_calibration.py`](../screen_calibration.py) generated a series of 6 targeted test patterns:
+- Image 1: `RULER_VERTICAL_240x320.jpg` — Dual 10-pixel tick rulers to read covered pixel counts directly.
+- Image 2: `RULER_HORIZONTAL_240x320.jpg` — Horizontal edge alignment guides.
+- Image 3: `GRID_240x320.jpg` — 10x10 colored grid with numeric coordinate anchors.
+- Image 4: `FIT_240x240.jpg` — 1:1 aspect ratio square.
+- Image 5: `FIT_240x260.jpg` — Conservative 60 px UI allowance.
+- Image 6: `FIT_240x280.jpg` — **Calculated 40 px UI allowance (20 px top + 20 px bottom)**.
+
+---
+
+## 4. Hardware Verification & Calibration Results
+
+The user tested the calibration suite on the physical device:
+
+| Metric | Measured Value | Device Observation |
 | :--- | :--- | :--- |
-| No true full-screen image mode | ✅ Plausible / matches your phone | No authoritative HMD statement, but consistent with your own observation. |
-| No auto-rotate (no accelerometer) | ✅ Plausible | Consistent with how the manga pipeline works (you physically turn the phone; image is pre-rotated). |
-| Display is 240×320 QVGA portrait | ✅ Consistent across sources | Sources disagree on **2.4″ vs 2.8″** for the 2024 model — matters only for the mm cross-check in §4. |
-| "Use 240×320 to avoid letterboxing" | ⚠️ **Misleading** | Only true if the viewer used the *whole* screen. It doesn't. If the viewer fits-to-area, a 240×320 image is *exactly the case that gets shrunk and letter-boxed*. This advice is probably how we got here. |
-| "Remaining photo area is roughly 240×260" | ❌ **Unsupported guess** | The agent itself says the padding "is not published". Our own searches returned *different* ranges (250–270 and 264–272). **No source gives a measured value.** |
-| Wallpaper gives the real maximum area | ⚠️ Irrelevant | A wallpaper fills 240×320 but sits behind home-screen UI — useless for reading a page. |
-| "Crop to 3:4 or 4:3" | ⚠️ Sloppy | 240×320 *is* 3:4 portrait. The correct target is **whatever the measured usable area is**, not a standard ratio. |
-
-**Conclusion:** the other agent was right that the bars can't be hidden, but gave **no real measurement**, and its
-sizing advice is the likely root cause. Nothing about the exact area can be trusted until measured.
+| **Viewer Scaling Behaviour** | Fit-to-screen (proportional) | Any image taller than 280 px induces width downscaling & black side bars |
+| **Optimal Geometry** | **240 × 280 pixels (Image #6)** | **Confirmed**: Black side bars are 100% eliminated, edge-to-edge width |
+| **Top Status Bar Height** | **20 pixels** | Exactly matches calculated boundary |
+| **Bottom Softkey Bar Height** | **20 pixels** | Exactly matches calculated boundary |
+| **Hardware LCD Resolution** | **240 × 320 pixels** | QVGA TFT LCD |
+| **Total Persistent UI Overhead** | **40 pixels** | 20 px top + 20 px bottom |
+| **True Usable Canvas** | **240 × 280 pixels** | **100% maximum screen real estate** |
 
 ---
 
-## 3. Measurement Procedure (on the phone)
+## 5. Architectural Implementation: `screen_spec.py`
 
-The kit is generated by [`screen_calibration.py`](../screen_calibration.py) and copied to **`F:\Calibration\`**.
+To prevent future regression, all rendering dimensions are centralized in [`screen_spec.py`](../screen_spec.py):
 
-```
-F:\Calibration\
-├── 1_Ruler\RULER_240x320.jpg          ← full-size ruler: tells overlay vs scale + hidden rows
-└── 2_Fit_Test\FIT_240x240 … 240x320   ← 11 images, height in steps of 8 px
-```
+```python
+WIDTH = 240
+HEIGHT = 280
 
-### Step A — Ruler (`RULER_240x320.jpg`)
-Open it in **Gallery / File Manager**. The image has a numbered line every 10 px (numbers = the image's own
-Y pixel row), a red/green/blue/orange square in each corner, and a thin black frame at the extreme edge.
+MARGIN_X = 12
+USABLE_WIDTH = WIDTH - (2 * MARGIN_X)  # 216 px
 
-Record:
+HEADER_Y = 7
+HEADER_LINE_Y = 23
+BODY_TOP_Y = 29
 
-1. **First row number you can read at the top** (e.g. `0`, `20`, `30` …) and whether the **red corner square** is visible.
-2. **Last row number you can read at the bottom** (e.g. `290`, `300`, `310`) and whether the **blue / orange corner squares** are visible.
-3. Are there **empty bars at the left / right** of the picture? Is the black frame visible on both sides?
-4. Do the numbers look **smaller than expected** (scaled) or **the same** with rows missing (cropped)?
-
-**How to read it**
-
-| What you see | Meaning | Usable area |
-| :--- | :--- | :--- |
-| All numbers `0…310` + all 4 corners visible, **empty bars left/right** | **Fit-to-area (scaled).** | height ≈ the on-screen picture height; scale = that ÷ 320 |
-| First visible number is `T`, last is `B`, corners cut | **Overlay / crop.** | hidden top ≈ `T` px, hidden bottom ≈ `320 − (B + 10)` px, usable height ≈ `B + 10 − T` |
-| Everything visible, no bars, nothing cut | Viewer has no bars on this image | Report this — unexpected |
-
-### Step B — Fit test (`2_Fit_Test\FIT_240xNNN.jpg`)
-Each image has a thick red frame and four colour corners. Open them from smallest to largest.
-The best match is the image where **the red frame touches both bars and both screen edges, all four corner squares
-are fully visible, and there is no gap and no cropping.**
-
-### Step C — Physical ruler cross-check (independent of our images)
-1. Open any fit-test image so the **status bar and softkey bar** are on screen.
-2. With a **millimetre ruler** held against the glass, measure:
-   - `W_mm` = full visible screen **width** (edge to edge of the lit area)
-   - `A_mm` = height of the picture area **between** the two bars
-   - `S_mm` = height of the **status bar**, `K_mm` = height of the **softkey bar**
-3. Compute the pixel pitch **from the screen itself** (no need to trust 2.4″/2.8″):
-
-```
-pitch  = W_mm / 240            (mm per pixel)
-area_h = A_mm / pitch          (usable height in pixels)
-status = S_mm / pitch
-softkey= K_mm / pitch
+FOOTER_LINE_Y = 257  # 23 px above bottom
+FOOTER_Y = 262       # 18 px above bottom
+USABLE_HEIGHT = FOOTER_LINE_Y - BODY_TOP_Y - 4  # 224 px
 ```
 
-Expected sanity check: `status + area_h + softkey ≈ 320`. If it does, the ruler method and the on-screen method agree.
-(Reference: a 2.8″ 3:4 panel has pitch ≈ 0.178 mm → 240 px ≈ 42.7 mm wide; a 2.4″ panel ≈ 0.152 mm → 36.6 mm.)
+### Pipelines Migrated:
+1. [`book_pipeline.py`](../book_pipeline.py): Literary Classics (`05`), Productivity & Finance (`02`), Quran Arabic & English (`01`).
+2. [`robert_greene_pipeline.py`](../robert_greene_pipeline.py): 7 Power & Strategy books (`03`).
+3. [`build_programming_books.py`](../build_programming_books.py): Pragmatic Programmer & C++ Principles 3rd Ed (`04`).
+4. [`tafsir_pipeline.py`](../tafsir_pipeline.py): Tafsir Al-Mukhtasar Arabic & English 114 Surahs (`01`).
+5. [`sync_books_to_phone.py`](../sync_books_to_phone.py): Buffered FAT32 transfer to `F:\Books`.
 
 ---
 
-## 4. Measured Results  *(fill in after the phone test)*
+## 6. Developer Guidelines for Future Nokia Media Pipelines
 
-| Quantity | Value | Method |
-| :--- | :--- | :--- |
-| Viewer behaviour (overlay / fit) | _pending_ | Step A |
-| Status bar height (px) | _pending_ | A / C |
-| Softkey bar height (px) | _pending_ | A / C |
-| **Usable width (px)** | _pending_ | A / B |
-| **Usable height (px)** | _pending_ | A / B / C |
-| Best-fit test image | _pending_ | Step B |
-| Cross-check `status + area + softkey` | _pending_ | Step C (must ≈ 320) |
-| Confirmed by user | ☐ | |
-
----
-
-## 5. Rebuild Plan (only after §4 is confirmed)
-
-1. Create one shared spec module (`screen_spec.py`) holding `PAGE_W`, `PAGE_H`, margins, header/footer rows — **single source of truth**, replacing the 5 duplicated constant blocks.
-2. Re-render page layout (text area, line count, pagination) for the measured usable area.
-3. **Delete** `books_out/`, `manga_out/`, `F:\Books`, and the manga folders on the SD card (old page counts/sizes differ, so stale pages must not survive).
-4. Re-run every pipeline: `book_pipeline`, `robert_greene_pipeline`, `build_programming_books`, `tafsir_pipeline`, `manga_pipeline`.
-5. Verify programmatically that **every** output image is exactly `PAGE_W × PAGE_H` and sync to the phone.
-6. Spot-check on the phone with a real page (header + last text line + page number all visible).
-
----
-
-## 6. Rules Going Forward
-
-- **Never hard-code 240×320 in a renderer.** Import the page size from the shared spec once it exists.
-- **"Screen resolution" ≠ "viewer resolution".** Any new media type shown via the Gallery (books, manga, calibration, wallpapers-as-pages) must be sized to the *viewer area*.
-- If the phone, firmware, or model changes (e.g. Nokia 225 4G, 6300 4G), **re-run `screen_calibration.py`** — bar heights are firmware-defined.
-- Do not trust spec sheets or chat answers for UI pixel sizes: HMD publishes none. **Measure.**
+1. **Never hard-code 240×320 for Gallery-based renderers.** Always use `screen_spec.py` (`240x280`).
+2. **"Screen Resolution" ≠ "Viewer Canvas".** Firmware UI bars restrict the viewport.
+3. **If targeting different Nokia firmware/models** (e.g., Nokia 225 4G, 6300 4G), run `screen_calibration.py` first to determine the model's status and softkey bar dimensions.

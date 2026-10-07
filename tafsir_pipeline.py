@@ -19,17 +19,19 @@ OUT_DIR = os.path.join(BASE_DIR, "books_out")
 AR_TAFSIR_RAW = os.path.join(RAW_DIR, "tafsir_mokhtasar_ar")
 EN_TAFSIR_RAW = os.path.join(RAW_DIR, "tafsir_mokhtasar_en")
 
-OUT_AR_DIR = os.path.join(OUT_DIR, "08_Tafsir_Al_Mukhtasar_Arabic")
-OUT_EN_DIR = os.path.join(OUT_DIR, "09_Tafsir_Al_Mukhtasar_English")
+OUT_AR_DIR = os.path.join(OUT_DIR, "01_Quran_And_Tafsir", "03_Tafsir_Al_Mukhtasar_Arabic")
+OUT_EN_DIR = os.path.join(OUT_DIR, "01_Quran_And_Tafsir", "04_Tafsir_Al_Mukhtasar_English")
 
+# Screen Specs (Calibrated 240x280 for Nokia 215 4G S30+ Persistent UI)
 WIDTH = 240
-HEIGHT = 320
+HEIGHT = 280
 USABLE_WIDTH = 216
-HEADER_Y = 8
-HEADER_LINE_Y = 27
-BODY_TOP_Y = 35
-FOOTER_LINE_Y = 297
-FOOTER_Y = 302
+USABLE_HEIGHT = 224
+HEADER_Y = 7
+HEADER_LINE_Y = 23
+BODY_TOP_Y = 29
+FOOTER_LINE_Y = 257
+FOOTER_Y = 262
 
 FONT_AR_PATH = os.path.join(BASE_DIR, "fonts", "Amiri-Regular.ttf")
 FONT_EN_BODY_PATH = r"C:\Windows\Fonts\segoeui.ttf"

@@ -19,9 +19,9 @@ This repository provides an **end-to-end automated publishing and rendering pipe
 ## 🏗️ Core Architecture & Design
 
 ### 1. The Image-Page Rendering Paradigm
-Rather than relying on non-existent mobile document viewers, every book chapter is rendered into sequential, crisp **240×320 QVGA images** (standard Nokia screen resolution):
+Rather than relying on non-existent mobile document viewers, every book chapter and manga page is rendered into sequential, crisp **240×280 images** calibrated for the active Nokia S30+ viewer canvas:
 
-> ⚠️ **Known issue (open): the phone's photo viewer is *not* 240×320.** The S30+ viewer permanently draws a status bar (top) and a softkey bar (bottom) that cannot be hidden, and HMD publishes no pixel sizes. Pages sized to the full 240×320 panel are therefore cropped or shrunk. The real usable area is being **measured on the device** with [`screen_calibration.py`](screen_calibration.py) before the library is re-rendered. Full details, the manual verification procedure and the rebuild plan: **[docs/SCREEN_AREA_ISSUE.md](docs/SCREEN_AREA_ISSUE.md)**.
+> ✅ **Screen-Area Calibration Resolved (240 × 280):** The physical TFT LCD is 240×320, but the S30+ photo viewer permanently reserves a 20 px top status bar (battery/clock/signal) and a 20 px bottom softkey bar ("Options"/"Back"). Rendering at the calibrated **240 × 280 pixels** via [`screen_spec.py`](screen_spec.py) completely eliminates black side letterboxing bars and ensures 100% visible, razor-sharp typography. Full empirical measurements and hardware verification: **[docs/SCREEN_AREA_ISSUE.md](docs/SCREEN_AREA_ISSUE.md)**.
 - **TFT High-Contrast Typography**: Off-white text on deep black or stark crisp black on pure white to prevent screen ghosting.
 - **Proportional Margins**: 8px horizontal padding, 10px vertical header/footer reserve, maximizing readability while preventing clipping under rounded bezel corners.
 - **Dynamic Headers & Footers**: Every page displays `[Book Title | Chapter X]` at the top and `Page X of Y` at the bottom for instant navigation context.

@@ -78,8 +78,8 @@ DELAY_BETWEEN_CHAPTERS = 0.4   # seconds
 RETRY_COUNT            = 12
 RETRY_BACKOFF          = 2     # seconds
 
-# Screen dimensions in landscape orientation
-LANDSCAPE_W = 320
+# Screen dimensions in landscape orientation (Calibrated 280x240 for 240x280 active viewer)
+LANDSCAPE_W = 280
 LANDSCAPE_H = 240
 
 STAGING_ROOT.mkdir(parents=True, exist_ok=True)
@@ -535,8 +535,8 @@ def verify_output(root, target_keys=None):
                 try:
                     with Image.open(img) as im:
                         w, h = im.size
-                        # Saved as 240x320 file (rotated 90° CW for landscape viewing)
-                        if w != 240 or h != 320:
+                        # Saved as 240x280 file (rotated 90° CW for landscape viewing in 240x280 canvas)
+                        if w != 240 or h != 280:
                             bad.append(f"{ch.name}/{img.name}: {w}x{h}")
                 except Exception as exc:
                     bad.append(f"{ch.name}/{img.name}: probe error: {exc}")
@@ -554,7 +554,7 @@ def verify_output(root, target_keys=None):
                 print(f"    ... and {len(bad)-10} more")
         else:
             if total_imgs > 0:
-                print(f"    All {total_imgs} images are strictly 240x320 landscape-ready [OK]")
+                print(f"    All {total_imgs} images are strictly 240x280 landscape-ready [OK]")
 
     print()
     return all_ok

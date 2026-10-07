@@ -19,14 +19,16 @@ BASE_DIR = r"E:\nokia"
 RAW_DIR = os.path.join(BASE_DIR, "books_raw")
 OUT_DIR = os.path.join(BASE_DIR, "books_out")
 
+# Screen Specs (Calibrated 240x280 for Nokia 215 4G S30+ Persistent UI)
 WIDTH = 240
-HEIGHT = 320
+HEIGHT = 280
 USABLE_WIDTH = 216
-HEADER_Y = 9
-HEADER_LINE_Y = 25
-BODY_TOP_Y = 33
-FOOTER_LINE_Y = 297
-FOOTER_Y = 302
+USABLE_HEIGHT = 224
+HEADER_Y = 7
+HEADER_LINE_Y = 23
+BODY_TOP_Y = 29
+FOOTER_LINE_Y = 257
+FOOTER_Y = 262
 
 FONT_BODY_PATH = r"C:\Windows\Fonts\georgia.ttf"
 FONT_HEAD_PATH = r"C:\Windows\Fonts\arial.ttf"
@@ -124,9 +126,9 @@ def render_pages(pages, chapter_dir, header_title, font_body, font_head, font_fo
         y = BODY_TOP_Y
         for line, is_para in page_lines:
             if is_para:
-                y += 7
+                y += 6
             draw.text((12, y), line, fill=(15, 15, 15), font=font_body)
-            y += 21
+            y += 20
 
         # Footer
         draw.line([(12, FOOTER_LINE_Y), (228, FOOTER_LINE_Y)], fill=(225, 225, 225), width=1)
@@ -146,7 +148,7 @@ def build_pragmatic_programmer():
     print("   BUILDING THE PRAGMATIC PROGRAMMER (20TH ANNIV) ")
     print("==================================================")
     epub_path = os.path.join(RAW_DIR, "pragmatic_programmer.epub")
-    book_dir = os.path.join(OUT_DIR, "10_The_Pragmatic_Programmer")
+    book_dir = os.path.join(OUT_DIR, "04_Computer_Science", "01_The_Pragmatic_Programmer")
 
     # Clean previous stale files
     if os.path.exists(book_dir):
@@ -194,12 +196,10 @@ def build_programming_principles_cpp():
     print(" BUILDING PROGRAMMING: PRINCIPLES & PRACTICE (C++)")
     print("==================================================")
     epub_path = os.path.join(RAW_DIR, "cpp_3rd.epub")
-    book_dir = os.path.join(OUT_DIR, "11_Programming_Principles_And_Practice_Using_CPP")
+    book_dir = os.path.join(OUT_DIR, "04_Computer_Science", "02_Programming_Principles_And_Practice_Using_CPP")
     
-    if os.path.exists(book_dir) and len(os.listdir(book_dir)) >= 23 and "--force-cpp" not in sys.argv:
-        print("  [*] C++ Principles (3rd Edition, 2024) is already fully rendered (23 chapters). Skipping re-render.")
-        return
-
+    if os.path.exists(book_dir):
+        shutil.rmtree(book_dir)
     os.makedirs(book_dir, exist_ok=True)
 
     font_body = ImageFont.truetype(FONT_BODY_PATH, 15)
