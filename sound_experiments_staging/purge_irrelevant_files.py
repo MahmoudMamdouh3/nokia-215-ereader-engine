@@ -85,6 +85,12 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "faye bryant",
         "the wizenard series: season one",
         "training day book 1",
+        "crash",
+        "after he died",
+        "disrespects",
+        "talking trash",
+        "passing of",
+        "tmz",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     
