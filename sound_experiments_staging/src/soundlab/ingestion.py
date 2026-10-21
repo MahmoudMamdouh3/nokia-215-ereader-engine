@@ -245,6 +245,12 @@ class IngestionEngine:
             "the lakers dynasty",
             "speaks on kobe",
             "speak on kobe",
+            "work ethic stories",
+            "kobe stories",
+            "kobe bryant stories",
+            "arriving to see",
+            "arriving at",
+            "arrives at",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
