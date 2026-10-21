@@ -210,6 +210,10 @@ class IngestionEngine:
             "last minutes of",
             "farewell game |",
             "farewell game (",
+            " on the time ",
+            " on kobe",
+            " on playing with",
+            " on facing kobe",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
