@@ -199,6 +199,8 @@ class IngestionEngine:
             "talking trash",
             "passing of",
             "tmz",
+            "on guarding",
+            "guarding kobe",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
