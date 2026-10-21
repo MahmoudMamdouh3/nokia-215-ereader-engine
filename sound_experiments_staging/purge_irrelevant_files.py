@@ -158,6 +158,10 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "behind the scenes:",
         "behind the scenes -",
         " on interviewing ",
+        "honors kobe",
+        "honoring kobe",
+        "duel highlights",
+        "epic duel",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     
@@ -165,6 +169,7 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         for talk_phrase in [
             "talks about ", "talking about ", "remembers ", "remembering ", 
             "reflects on ", "reflecting on ", "reacts to ", "reacting to ",
+            "reactions to ", "honors kobe", "honoring kobe",
             "says kobe", "say kobe", "claims kobe", "breaks down kobe",
             " on was kobe", " on whether kobe", "discusses ", "discussing ",
             "told kobe ", "tells kobe ",

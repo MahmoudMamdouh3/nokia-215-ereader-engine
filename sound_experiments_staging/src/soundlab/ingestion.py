@@ -266,12 +266,17 @@ class IngestionEngine:
             "behind the scenes:",
             "behind the scenes -",
             " on interviewing ",
+            "honors kobe",
+            "honoring kobe",
+            "duel highlights",
+            "epic duel",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
             for talk_phrase in [
                 "talks about ", "talking about ", "remembers ", "remembering ",
                 "reflects on ", "reflecting on ", "reacts to ", "reacting to ",
+                "reactions to ", "honors kobe", "honoring kobe",
                 "says kobe", "say kobe", "claims kobe", "breaks down kobe",
                 " on was kobe", " on whether kobe", "discusses ", "discussing ",
                 "told kobe ", "tells kobe ",
