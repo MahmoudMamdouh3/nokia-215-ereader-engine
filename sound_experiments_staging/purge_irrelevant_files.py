@@ -176,6 +176,8 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "he was trash",
         "| the jump",
         "headline the 20",
+        "buckley interviews",
+        "hoop stories with",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     

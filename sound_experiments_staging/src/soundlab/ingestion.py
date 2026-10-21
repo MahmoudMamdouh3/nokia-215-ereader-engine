@@ -284,6 +284,8 @@ class IngestionEngine:
             "he was trash",
             "| the jump",
             "headline the 20",
+            "buckley interviews",
+            "hoop stories with",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
