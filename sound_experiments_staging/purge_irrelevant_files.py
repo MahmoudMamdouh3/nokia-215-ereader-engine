@@ -35,12 +35,10 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
     non_kobe_indicators = [
         "narrated by",
         "reveals kobe",
-        "reflects on kobe",
-        "reacts to kobe",
-        "remembers kobe",
-        "remembering kobe",
-        "talks about kobe",
-        "talking about kobe",
+        "story about kobe",
+        "stories about kobe",
+        "opens up about kobe",
+        "tells story about",
         "memorializing kobe",
         "coaching kobe",
         "what it was like coaching",
@@ -79,6 +77,15 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "passed away",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
+    
+    if not is_third_party:
+        for talk_phrase in ["talks about ", "talking about ", "remembers ", "remembering ", "reflects on ", "reflecting on ", "reacts to ", "reacting to "]:
+            if talk_phrase in title_lower:
+                idx = title_lower.find(talk_phrase)
+                prefix = title_lower[:idx]
+                if not any(k in prefix for k in ["kobe", "bryant", "mamba"]):
+                    is_third_party = True
+                    break
     
     if not is_kobe or is_third_party:
         fp = Path(file_path_str)

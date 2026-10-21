@@ -184,7 +184,17 @@ class IngestionEngine:
             "rest in peace",
             "passed away",
         ]
-        if any(ind in title_lower for ind in non_kobe_indicators):
+        is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
+        if not is_third_party:
+            for talk_phrase in ["talks about ", "talking about ", "remembers ", "remembering ", "reflects on ", "reflecting on ", "reacts to ", "reacting to "]:
+                if talk_phrase in title_lower:
+                    idx = title_lower.find(talk_phrase)
+                    prefix = title_lower[:idx]
+                    if not any(k in prefix for k in ["kobe", "bryant", "mamba"]):
+                        is_third_party = True
+                        break
+
+        if is_third_party:
             print(f"[Rejected Third-Party Tribute] Skipping '{safe_title}' ({url}): Video appears to be others talking about Kobe.")
             return None
         temp_dir = config.derived_dir / "tmp_downloads"
