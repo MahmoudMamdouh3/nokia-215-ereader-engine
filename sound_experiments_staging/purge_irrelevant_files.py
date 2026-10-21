@@ -167,6 +167,7 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
             "reflects on ", "reflecting on ", "reacts to ", "reacting to ",
             "says kobe", "say kobe", "claims kobe", "breaks down kobe",
             " on was kobe", " on whether kobe", "discusses ", "discussing ",
+            "told kobe ", "tells kobe ",
         ]:
             if talk_phrase in title_lower:
                 idx = title_lower.find(talk_phrase)
