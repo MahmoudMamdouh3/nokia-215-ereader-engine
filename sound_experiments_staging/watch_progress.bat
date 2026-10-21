@@ -1,5 +1,5 @@
 @echo off
-title Sound Experiments - Live Dataset Monitor (Live Refresh)
+title Sound Experiments - Live Dataset Monitor (Master 1000 Campaign)
 cls
-"D:\SoundExperiments\venv\Scripts\python.exe" -m soundlab.cli progress --target 500 --watch
+"D:\SoundExperiments\venv\Scripts\python.exe" -m soundlab.cli progress --target 1000 --watch
 pause

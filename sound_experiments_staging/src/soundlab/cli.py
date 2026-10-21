@@ -51,7 +51,7 @@ def status():
 
 @app.command()
 def progress(
-    target: int = typer.Option(500, "--target", "-t", help="Target number of clean audio recordings for the master campaign"),
+    target: int = typer.Option(1000, "--target", "-t", help="Target number of clean audio recordings for the master campaign"),
     watch: bool = typer.Option(False, "--watch", "-w", help="Keep running and refresh live in place"),
     interval: float = typer.Option(2.0, "--interval", "-i", help="Seconds between refresh in watch mode"),
 ):

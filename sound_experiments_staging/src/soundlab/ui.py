@@ -26,7 +26,7 @@ def get_telemetry():
     free_e = get_free_space_gb(config.raw_dir)
     free_d = get_free_space_gb(config.derived_dir)
 
-    target_campaign = 500
+    target_campaign = 1000
     active = stats["active_files_count"]
     harvest_pct = min(100.0, (active / target_campaign) * 100) if target_campaign > 0 else 0
     rem = max(0, target_campaign - active)
