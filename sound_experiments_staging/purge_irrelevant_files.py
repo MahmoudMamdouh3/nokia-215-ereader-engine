@@ -93,6 +93,11 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "tmz",
         "on guarding",
         "guarding kobe",
+        "dissing kobe",
+        " diss ",
+        "diss 2010",
+        "diss track",
+        "b.e. - kobe",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     
