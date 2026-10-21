@@ -190,6 +190,12 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "spike lee shares",
         "| get up",
         "inside story",
+        "luke walton on",
+        "mitch kupchak on",
+        "safdie brothers",
+        "interviews kevin ding",
+        "the rick: kobe",
+        "the ringer",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     

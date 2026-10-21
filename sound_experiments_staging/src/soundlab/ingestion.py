@@ -298,6 +298,12 @@ class IngestionEngine:
             "spike lee shares",
             "| get up",
             "inside story",
+            "luke walton on",
+            "mitch kupchak on",
+            "safdie brothers",
+            "interviews kevin ding",
+            "the rick: kobe",
+            "the ringer",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
