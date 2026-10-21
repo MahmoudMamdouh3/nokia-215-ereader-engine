@@ -10,7 +10,7 @@ c = conn.cursor()
 c.execute("SELECT COUNT(*) FROM raw_files WHERE status = 'active'")
 print(f"Total Active Clean Audio Files: {c.fetchone()[0]}")
 
-c.execute("SELECT r.id, s.title, r.file_path, r.duration_sec, r.file_size_bytes FROM raw_files r JOIN sources s ON r.source_id = s.id WHERE r.id >= 805 ORDER BY r.id ASC")
+c.execute("SELECT r.id, s.title, r.file_path, r.duration_sec, r.file_size_bytes FROM raw_files r JOIN sources s ON r.source_id = s.id WHERE r.id = 813")
 rows = c.fetchall()
 
 filter_tool = KobeVoiceprintFilter()
