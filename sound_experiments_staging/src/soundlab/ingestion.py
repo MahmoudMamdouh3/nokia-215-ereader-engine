@@ -206,6 +206,10 @@ class IngestionEngine:
             "diss 2010",
             "diss track",
             "b.e. - kobe",
+            "last 3 minutes of",
+            "last minutes of",
+            "farewell game |",
+            "farewell game (",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
