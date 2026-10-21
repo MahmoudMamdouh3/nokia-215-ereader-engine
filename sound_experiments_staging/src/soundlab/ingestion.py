@@ -223,6 +223,11 @@ class IngestionEngine:
             "legends share",
             "nba legends share",
             "craziest kobe bryant story",
+            "resumen libro",
+            "resumen del libro",
+            "lecciones que nos dejó",
+            "una amistad más allá",
+            "más allá de las canchas",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
