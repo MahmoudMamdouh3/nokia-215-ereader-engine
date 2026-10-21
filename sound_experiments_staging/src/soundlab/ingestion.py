@@ -260,6 +260,8 @@ class IngestionEngine:
             "amazing last ",
             "final game vs jazz",
             "kobe draft 1996",
+            "la lettera di",
+            "lettera di",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:

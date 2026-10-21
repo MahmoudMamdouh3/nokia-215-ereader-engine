@@ -152,6 +152,8 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "amazing last ",
         "final game vs jazz",
         "kobe draft 1996",
+        "la lettera di",
+        "lettera di",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     
