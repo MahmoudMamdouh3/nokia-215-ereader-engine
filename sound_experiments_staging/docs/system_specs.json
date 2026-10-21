@@ -1,0 +1,337 @@
+{
+  "generated_at": "2026-10-21T20:00:40+03:00",
+  "os": {
+    "os": {
+      "Caption": "Microsoft Windows 11 Home",
+      "Version": "10.0.26300",
+      "BuildNumber": "26300",
+      "OSArchitecture": "64-bit"
+    },
+    "bios": {
+      "SMBIOSBIOSVersion": "M2CN32WW",
+      "Manufacturer": "LENOVO"
+    },
+    "computer": {
+      "Manufacturer": "LENOVO",
+      "Model": "82YA",
+      "SystemType": "x64-based PC"
+    },
+    "python_platform": "Windows-10-10.0.26300-SP0",
+    "long_paths_enabled": true,
+    "power_scheme": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "battery": {
+      "EstimatedChargeRemaining": 79,
+      "BatteryStatus": 2
+    }
+  },
+  "cpu": {
+    "processors": [
+      {
+        "Name": "13th Gen Intel(R) Core(TM) i7-13700H",
+        "NumberOfCores": 14,
+        "NumberOfLogicalProcessors": 20,
+        "MaxClockSpeed": 2400,
+        "CurrentClockSpeed": 2400,
+        "L2CacheSize": 11776,
+        "L3CacheSize": 24576
+      }
+    ],
+    "features": {
+      "SSE4.2": true,
+      "AVX": true,
+      "AVX2": true,
+      "AVX512F": false
+    },
+    "logical_cpus_python": 20
+  },
+  "memory": {
+    "modules": [
+      {
+        "Capacity": 8589934592,
+        "Speed": 5600,
+        "ConfiguredClockSpeed": 5200,
+        "Manufacturer": "Samsung",
+        "PartNumber": "M425R1GB4BB0-CWMOD  "
+      },
+      {
+        "Capacity": 8589934592,
+        "Speed": 5600,
+        "ConfiguredClockSpeed": 5200,
+        "Manufacturer": "Samsung",
+        "PartNumber": "M425R1GB4BB0-CWMOD  "
+      }
+    ],
+    "total_gb": 15.73,
+    "free_gb_now": 0.82,
+    "pagefile": [
+      {
+        "Name": "C:\\pagefile.sys",
+        "AllocatedBaseSize": 15872,
+        "CurrentUsage": 446
+      }
+    ]
+  },
+  "gpu": {
+    "video_controllers": [
+      {
+        "Name": "Intel(R) Iris(R) Xe Graphics",
+        "AdapterRAM": 2147479552,
+        "DriverVersion": "32.0.101.6790",
+        "VideoProcessor": "Intel(R) Iris(R) Xe Graphics Family"
+      },
+      {
+        "Name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "AdapterRAM": 4293918720,
+        "DriverVersion": "32.0.16.1692",
+        "VideoProcessor": "NVIDIA GeForce RTX 4060 Laptop GPU"
+      }
+    ],
+    "nvidia": {
+      "present": true,
+      "cuda_version_driver_supports": "13.4",
+      "gpus": [
+        {
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "memory.total": "8188",
+          "memory.used": "1765",
+          "memory.free": "6192",
+          "driver_version": "616.92",
+          "compute_cap": "8.9",
+          "pcie.link.gen.current": "2",
+          "pcie.link.gen.max": "4",
+          "pcie.link.width.current": "8",
+          "power.limit": "[N/A]",
+          "clocks.max.sm": "3105",
+          "clocks.max.mem": "8001",
+          "temperature.gpu": "47",
+          "utilization.gpu": "38"
+        }
+      ],
+      "nvidia_smi_raw": "Wed Oct 21 20:00:44 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 616.92                 KMD Version: 616.92        CUDA UMD Version: 13.4     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 4060 ...  WDDM  |   00000000:01:00.0  On |                  N/A |\n| N/A   47C    P5              8W /   60W |    1765MiB /   8188MiB |     38%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            1588    C+G   ...2txyewy\\CrossDeviceResume.exe      N/A      |\n|    0   N/A  N/A            2752    C+G   ...ntrolPanel\\SystemSettings.exe      N/A      |\n|    0   N/A  N/A            3272    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A            5584    C+G   ...avity IDE\\Antigravity IDE.exe      N/A      |\n|    0   N/A  N/A            8188    C+G   ...lus\\logioptionsplus_agent.exe      N/A      |\n|    0   N/A  N/A           11360    C+G   ...SnippingTool\\SnippingTool.exe      N/A      |\n|    0   N/A  N/A           15028    C+G   ...64__zpdnekdrzrea0\\Spotify.exe      N/A      |\n|    0   N/A  N/A           16036    C+G   ..._cw5n1h2txyewy\\SearchHost.exe      N/A      |\n|    0   N/A  N/A           16980    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           18092    C+G   ....0.4283.62\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           19372    C+G   ...xyewy\\ShellExperienceHost.exe      N/A      |\n|    0   N/A  N/A           20444    C+G   ...em32\\ApplicationFrameHost.exe      N/A      |\n|    0   N/A  N/A           20512    C+G   ...8bbwe\\PhoneExperienceHost.exe      N/A      |\n|    0   N/A  N/A           20660    C+G   ...5n1h2txyewy\\TextInputHost.exe      N/A      |\n|    0   N/A  N/A           21324    C+G   ...Browser\\Application\\brave.exe      N/A      |\n|    0   N/A  N/A           21724    C+G   ...indows\\System32\\ShellHost.exe      N/A      |\n|    0   N/A  N/A           22012    C+G   ...Browser\\Application\\brave.exe      N/A      |\n|    0   N/A  N/A           23080    C+G   ....0.4283.62\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           24176    C+G   ....0.4283.62\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           24780    C+G   ...n\\AdobeNotificationClient.exe      N/A      |\n|    0   N/A  N/A           25988    C+G   ...1g1gvanyjgm\\WhatsApp.Root.exe      N/A      |\n|    0   N/A  N/A           27224    C+G   ...avity IDE\\Antigravity IDE.exe      N/A      |\n|    0   N/A  N/A           28972    C+G   ...cord\\app-1.0.9264\\Discord.exe      N/A      |\n|    0   N/A  N/A           29504    C+G   ...\\cef.win64\\steamwebhelper.exe      N/A      |\n|    0   N/A  N/A           33140    C+G   ...App_cw5n1h2txyewy\\LockApp.exe      N/A      |\n+-----------------------------------------------------------------------------------------+"
+    },
+    "nvcc": null
+  },
+  "storage": {
+    "volumes": [
+      {
+        "drive": "E",
+        "label": "Dev Drive 1",
+        "fs": "ReFS",
+        "size_gb": 99.94,
+        "free_gb": 83.84,
+        "health": "Healthy"
+      },
+      {
+        "drive": "C",
+        "label": "",
+        "fs": "NTFS",
+        "size_gb": 953.13,
+        "free_gb": 138.2,
+        "health": "Healthy"
+      },
+      {
+        "drive": "D",
+        "label": "SSD2",
+        "fs": "NTFS",
+        "size_gb": 464.76,
+        "free_gb": 285.1,
+        "health": "Healthy"
+      }
+    ],
+    "physical_disks": [
+      {
+        "FriendlyName": "Msft Virtual Disk",
+        "MediaType": "SSD",
+        "BusType": "File Backed Virtual",
+        "Size": 107374182400,
+        "HealthStatus": "Healthy"
+      },
+      {
+        "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+        "MediaType": "SSD",
+        "BusType": "NVMe",
+        "Size": 1024209543168,
+        "HealthStatus": "Healthy"
+      },
+      {
+        "FriendlyName": "Samsung SSD 980 500GB",
+        "MediaType": "SSD",
+        "BusType": "NVMe",
+        "Size": 500107862016,
+        "HealthStatus": "Healthy"
+      }
+    ],
+    "dev_drive": {
+      "E": "Failed to open the volume.\nError 5: Access is denied.",
+      "D": "Failed to open the volume.\nError 5: Access is denied.",
+      "C": "Failed to open the volume.\nError 5: Access is denied."
+    },
+    "write_bench_mb_s": {
+      "E": 580.4,
+      "D": 754.6,
+      "C": 1164.2
+    }
+  },
+  "network": {
+    "tcp_connect_ms": {
+      "www.youtube.com": 74.1,
+      "archive.org": 211.2,
+      "huggingface.co": 16.1,
+      "pypi.org": 63.1,
+      "github.com": 77.0
+    },
+    "download_mbit_s": 26.9,
+    "interfaces": [
+      {
+        "Name": "WE_320EA8",
+        "InterfaceAlias": "Wi-Fi",
+        "IPv4Connectivity": 4
+      }
+    ]
+  },
+  "toolchain": {
+    "tools": {
+      "python": {
+        "path": "C:\\Users\\mahmo\\AppData\\Local\\Programs\\Python\\Python310\\python.EXE",
+        "version": "Python 3.10.6"
+      },
+      "pip": {
+        "path": "C:\\Users\\mahmo\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\pip.EXE",
+        "version": "pip 26.0.1 from C:\\Users\\mahmo\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pip (python 3.10)"
+      },
+      "uv": {
+        "path": "C:\\Users\\mahmo\\.local\\bin\\uv.EXE",
+        "version": "uv 0.11.26 (396ef7ce4 2026-06-30 x86_64-pc-windows-msvc)"
+      },
+      "git": {
+        "path": "C:\\Program Files\\Git\\cmd\\git.EXE",
+        "version": "git version 2.56.0.windows.2"
+      },
+      "ffmpeg": {
+        "path": "C:\\Users\\mahmo\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+        "version": "ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers"
+      },
+      "ffprobe": {
+        "path": "C:\\Users\\mahmo\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffprobe.EXE",
+        "version": "ffprobe version 9.0.2-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers"
+      },
+      "yt-dlp": {
+        "path": "C:\\Users\\mahmo\\AppData\\Local\\Microsoft\\WinGet\\Links\\yt-dlp.EXE",
+        "version": "2026.08.19"
+      },
+      "aria2c": {
+        "path": "C:\\Users\\mahmo\\AppData\\Local\\Microsoft\\WinGet\\Links\\aria2c.EXE",
+        "version": "aria2 version 1.37.0"
+      },
+      "node": {
+        "path": "C:\\Program Files\\nodejs\\node.EXE",
+        "version": "v26.8.1"
+      },
+      "deno": {
+        "path": "C:\\Users\\mahmo\\AppData\\Local\\Microsoft\\WinGet\\Links\\deno.EXE",
+        "version": "deno 2.9.7 (stable, release, x86_64-pc-windows-msvc)"
+      },
+      "fpcalc": null,
+      "sox": null,
+      "cmake": {
+        "path": "C:\\Program Files\\CMake\\bin\\cmake.EXE",
+        "version": "cmake version 4.4.4"
+      },
+      "7z": null,
+      "winget": {
+        "path": "C:\\Users\\mahmo\\AppData\\Local\\Microsoft\\WindowsApps\\winget.EXE",
+        "version": "v1.29.380"
+      },
+      "conda": null
+    },
+    "ffmpeg_hwaccels": "Hardware acceleration methods:\ncuda\nvaapi\ndxva2\nqsv\nd3d11va\nopencl\nvulkan\nd3d12va\namf",
+    "python_executable": "C:\\Users\\mahmo\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "python_version": "3.10.6",
+    "packages_of_interest": {
+      "torch": null,
+      "torchaudio": null,
+      "numpy": "2.2.6",
+      "scipy": null,
+      "librosa": null,
+      "soundfile": "0.13.1",
+      "gradio": null,
+      "yt-dlp": null,
+      "faster-whisper": null,
+      "whisperx": null,
+      "pyannote.audio": null,
+      "speechbrain": null,
+      "demucs": null,
+      "audio-separator": null,
+      "faiss-cpu": null,
+      "faiss-gpu": null,
+      "onnxruntime": null,
+      "onnxruntime-gpu": null,
+      "transformers": null,
+      "pysubs2": "1.8.1",
+      "webrtcvad-wheels": "2.0.14.post1",
+      "datasketch": null,
+      "sqlalchemy": null,
+      "typer": null,
+      "pydantic": "2.13.4"
+    },
+    "total_installed_packages": 162
+  },
+  "recommendations": {
+    "generated_by": "tools/system_probe.py (heuristics - validate with real benchmarks)",
+    "gpu": {
+      "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "vram_total_mib": 8188.0,
+      "vram_idle_free_mib": 6423.0,
+      "vram_budget_mib": 5459,
+      "max_concurrent_gpu_jobs": 1,
+      "note": "Laptop dGPU shares VRAM with the desktop compositor; load ONE heavy model at a time."
+    },
+    "cpu": {
+      "logical_cpus": 20,
+      "io_workers": 8,
+      "cpu_workers": 14,
+      "note": "Keep ~4-6 logical CPUs free for the UI, OS and the GPU feeder thread."
+    },
+    "memory": {
+      "total_gb": 15.73,
+      "free_gb_at_probe": 0.82,
+      "pipeline_ram_budget_gb_ceiling": 9.4,
+      "audio_chunk_minutes": 20,
+      "note": "Only ~16 GB RAM and usually much less is free (browser/IDE/Windows). Treat the budget as a CEILING: at runtime use min(ceiling, available_ram - 2 GB). Stream/chunk long audio."
+    },
+    "models": {
+      "whisper": {
+        "model": "large-v3",
+        "compute_type": "int8_float16",
+        "batch_size": 8
+      },
+      "separation": {
+        "preferred": [
+          "bs_roformer",
+          "mel_band_roformer",
+          "htdemucs_ft"
+        ],
+        "segment_overlap": 0.25,
+        "fp16": true
+      },
+      "diarization": {
+        "device": "cuda",
+        "batch_size": 16
+      },
+      "embedding": {
+        "device": "cuda",
+        "batch_size": 64
+      }
+    },
+    "storage": {
+      "volumes_gb_free": {
+        "E": 83.84,
+        "C": 138.2,
+        "D": 285.1
+      },
+      "raw_budget_gb_on_E": 55,
+      "keep_free_gb_on_E": 12,
+      "note": "E: is a 100 GB ReFS Dev Drive; use D: (and C: sparingly) for derived data and model caches."
+    }
+  }
+}

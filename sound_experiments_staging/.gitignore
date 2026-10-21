@@ -1,0 +1,36 @@
+# Data never goes in git
+Kobe bryant Database raw/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Audio / model artifacts
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.opus
+*.ogg
+*.webm
+*.mkv
+*.mp4
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+*.index
+
+# Secrets and local state
+.env
+*.env
+cookies*.txt
+.venv/
+venv/
+
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/

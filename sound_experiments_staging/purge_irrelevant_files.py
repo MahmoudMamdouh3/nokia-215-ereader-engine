@@ -1,0 +1,86 @@
+import sqlite3
+import shutil
+import json
+from pathlib import Path
+from soundlab.config import config
+
+conn = sqlite3.connect(str(config.catalog_path))
+c = conn.cursor()
+
+c.execute('''
+    SELECT r.id, s.title, s.platform_id, r.file_path, s.metadata_json 
+    FROM sources s 
+    JOIN raw_files r ON r.source_id = s.id 
+    WHERE r.status = 'active'
+''')
+
+rows = c.fetchall()
+quarantine_count = 0
+kobe_keywords = ["kobe", "bryant", "mamba", "dear basketball", "wizenard", "81 point", "staples center"]
+
+for raw_id, title, platform_id, file_path_str, meta_str in rows:
+    title_lower = title.lower()
+    meta = {}
+    try:
+        if meta_str:
+            meta = json.loads(meta_str)
+    except Exception:
+        pass
+    
+    desc_lower = (meta.get("description") or "").lower()
+    tags_lower = [str(t).lower() for t in meta.get("tags") or []]
+    
+    is_kobe = any(k in title_lower for k in kobe_keywords)
+    
+    non_kobe_indicators = [
+        "narrated by",
+        "reveals kobe",
+        "reflects on kobe",
+        "reacts to kobe",
+        "remembers kobe",
+        "remembering kobe",
+        "talks about kobe",
+        "talking about kobe",
+        "memorializing kobe",
+        "coaching kobe",
+        "what it was like coaching",
+        "luke on lebron",
+        "vanessa bryant",
+        "michael jordan",
+        "memorial service",
+        "memorial",
+        "eulogy",
+        "la morte di",
+        "usain bolt",
+        "sylvester stallone",
+        "federico buffa racconta",
+    ]
+    is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
+    
+    if not is_kobe or is_third_party:
+        fp = Path(file_path_str)
+        quarantine_dest = config.quarantine_dir / "not_kobe" / platform_id / fp.name
+        quarantine_dest.parent.mkdir(parents=True, exist_ok=True)
+        
+        safe_title = title.encode("ascii", "replace").decode("ascii")
+        print(f"[Quarantining Non-Kobe] #{raw_id}: {safe_title} ({platform_id})")
+        
+        if fp.exists():
+            shutil.move(str(fp), str(quarantine_dest))
+            if fp.parent.exists() and not any(fp.parent.iterdir()):
+                try:
+                    fp.parent.rmdir()
+                except Exception:
+                    pass
+            
+        c.execute("UPDATE raw_files SET status = 'quarantined', file_path = ? WHERE id = ?", (str(quarantine_dest), raw_id))
+        c.execute("""
+            INSERT INTO duplicates (raw_file_id, duplicate_of_id, match_type, similarity_score, details)
+            VALUES (?, ?, 'NOT_KOBE_IRRELEVANT', 0.0, ?)
+        """, (raw_id, raw_id, f"Quarantined: Video '{safe_title}' does not reference Kobe Bryant in title, tags, or description."))
+        quarantine_count += 1
+
+conn.commit()
+conn.close()
+
+print(f"\nAudit complete! Successfully quarantined {quarantine_count} non-Kobe files.")

@@ -129,8 +129,41 @@ class IngestionEngine:
         upload_date = meta.get("upload_date", "")
         extractor = meta.get("extractor", platform)
 
+        # Strict Pre-Download Relevance Guard: Ensure title explicitly features Kobe Bryant
+        title_lower = title.lower()
+        kobe_keywords = ["kobe", "bryant", "mamba", "dear basketball", "wizenard"]
 
-        # Temporary download path
+        matches_kobe = any(k in title_lower for k in kobe_keywords)
+        if not matches_kobe:
+            print(f"[Rejected Non-Kobe] Skipping '{safe_title}' ({url}): Video title does not reference Kobe Bryant.")
+            return None
+
+        # Exclude third-party videos where others talk *about* Kobe rather than Kobe speaking
+        non_kobe_indicators = [
+            "narrated by",
+            "reveals kobe",
+            "reflects on kobe",
+            "reacts to kobe",
+            "remembers kobe",
+            "remembering kobe",
+            "talks about kobe",
+            "talking about kobe",
+            "memorializing kobe",
+            "coaching kobe",
+            "what it was like coaching",
+            "vanessa bryant",
+            "michael jordan",
+            "memorial service",
+            "memorial",
+            "eulogy",
+            "la morte di kobe",
+            "morte di kobe",
+            "racconta:",
+            "hommage",
+        ]
+        if any(ind in title_lower for ind in non_kobe_indicators):
+            print(f"[Rejected Third-Party Tribute] Skipping '{safe_title}' ({url}): Video appears to be others talking about Kobe.")
+            return None
         temp_dir = config.derived_dir / "tmp_downloads"
         temp_dir.mkdir(parents=True, exist_ok=True)
         out_template = str(temp_dir / f"{video_id}.%(ext)s")
