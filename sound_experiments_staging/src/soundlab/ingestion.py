@@ -277,6 +277,11 @@ class IngestionEngine:
             "laker for life",
             "doesn't flinch",
             "in honor of ",
+            "eviscerates",
+            "disparaging",
+            "claims he was",
+            "rally together",
+            "he was trash",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
