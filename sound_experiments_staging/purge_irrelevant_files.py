@@ -75,6 +75,16 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "r.i.p",
         "rest in peace",
         "passed away",
+        "audiobook) by",
+        "audiobook by",
+        "(audiobook)",
+        "dies at",
+        "promotes witchcraft",
+        "satanism",
+        "takes final bow",
+        "faye bryant",
+        "the wizenard series: season one",
+        "training day book 1",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     
