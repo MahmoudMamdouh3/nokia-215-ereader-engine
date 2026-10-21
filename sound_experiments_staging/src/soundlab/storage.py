@@ -77,7 +77,7 @@ class StorageManager:
         Move a duplicate audio file to quarantine.
         Never permanently deletes raw data.
         """
-        target = self.quarantine_dir / f"dup_of_{duplicate_of_id}" / file_path.name
+        target = self.quarantine_dir / "duplicates" / f"dup_of_{duplicate_of_id}" / file_path.name
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(str(file_path), str(target))
         return target

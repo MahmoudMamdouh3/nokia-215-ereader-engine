@@ -15,7 +15,7 @@ WORKSPACE_DIR = Path(r"E:\Sound Experiments")
 RAW_DATABASE_DIR = WORKSPACE_DIR / "Kobe bryant Database raw"
 CATALOG_DB_PATH = RAW_DATABASE_DIR / "_catalog" / "catalog.sqlite"
 RAW_SOURCES_DIR = RAW_DATABASE_DIR / "sources"
-QUARANTINE_DIR = RAW_DATABASE_DIR / "_quarantine" / "duplicates"
+QUARANTINE_DIR = RAW_DATABASE_DIR / "_quarantine"
 INBOX_DIR = RAW_DATABASE_DIR / "inbox"
 MANIFESTS_DIR = RAW_DATABASE_DIR / "_manifests"
 

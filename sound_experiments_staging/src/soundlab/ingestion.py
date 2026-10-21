@@ -230,10 +230,30 @@ class IngestionEngine:
             "más allá de las canchas",
             "choc nel mondo",
             "unomattina",
+            "pays tribute",
+            "paying tribute",
+            "tribute to kobe",
+            "tribute to gianna",
+            "first take",
+            "skip bayless",
+            "stephen a.",
+            "shannon sharpe",
+            "undisputed",
+            "max kellerman",
+            "colin cowherd",
+            "debunked",
+            "the lakers dynasty",
+            "speaks on kobe",
+            "speak on kobe",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
-            for talk_phrase in ["talks about ", "talking about ", "remembers ", "remembering ", "reflects on ", "reflecting on ", "reacts to ", "reacting to "]:
+            for talk_phrase in [
+                "talks about ", "talking about ", "remembers ", "remembering ",
+                "reflects on ", "reflecting on ", "reacts to ", "reacting to ",
+                "says kobe", "say kobe", "claims kobe", "breaks down kobe",
+                " on was kobe", " on whether kobe"
+            ]:
                 if talk_phrase in title_lower:
                     idx = title_lower.find(talk_phrase)
                     prefix = title_lower[:idx]
