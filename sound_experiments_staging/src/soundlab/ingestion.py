@@ -271,6 +271,12 @@ class IngestionEngine:
             "duel highlights",
             "epic duel",
             "rubin report",
+            "top 10 plays",
+            "full highlights",
+            "the last chapter",
+            "laker for life",
+            "doesn't flinch",
+            "in honor of ",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
