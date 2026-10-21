@@ -286,6 +286,18 @@ class IngestionEngine:
             "headline the 20",
             "buckley interviews",
             "hoop stories with",
+            "life and legacy",
+            "shares some of",
+            "in our hearts forever",
+            "had a big influence on",
+            "describes trying to",
+            "details his beef",
+            "how will the world remember",
+            "rafael nadal:",
+            "chiney ogwumike",
+            "spike lee shares",
+            "| get up",
+            "inside story",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
