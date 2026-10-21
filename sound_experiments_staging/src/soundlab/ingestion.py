@@ -179,6 +179,10 @@ class IngestionEngine:
             "autopsia",
             "helicoptero",
             "helicóptero",
+            "death",
+            "r.i.p",
+            "rest in peace",
+            "passed away",
         ]
         if any(ind in title_lower for ind in non_kobe_indicators):
             print(f"[Rejected Third-Party Tribute] Skipping '{safe_title}' ({url}): Video appears to be others talking about Kobe.")
