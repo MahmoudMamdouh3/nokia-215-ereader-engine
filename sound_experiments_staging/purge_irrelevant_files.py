@@ -154,6 +154,7 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "kobe draft 1996",
         "la lettera di",
         "lettera di",
+        "kobe taught ",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     
@@ -162,7 +163,7 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
             "talks about ", "talking about ", "remembers ", "remembering ", 
             "reflects on ", "reflecting on ", "reacts to ", "reacting to ",
             "says kobe", "say kobe", "claims kobe", "breaks down kobe",
-            " on was kobe", " on whether kobe"
+            " on was kobe", " on whether kobe", "discusses ", "discussing ",
         ]:
             if talk_phrase in title_lower:
                 idx = title_lower.find(talk_phrase)
