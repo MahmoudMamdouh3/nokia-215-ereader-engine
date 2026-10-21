@@ -155,6 +155,9 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "la lettera di",
         "lettera di",
         "kobe taught ",
+        "behind the scenes:",
+        "behind the scenes -",
+        " on interviewing ",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     

@@ -263,6 +263,9 @@ class IngestionEngine:
             "la lettera di",
             "lettera di",
             "kobe taught ",
+            "behind the scenes:",
+            "behind the scenes -",
+            " on interviewing ",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
