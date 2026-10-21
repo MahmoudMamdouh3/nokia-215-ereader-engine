@@ -251,6 +251,15 @@ class IngestionEngine:
             "arriving to see",
             "arriving at",
             "arrives at",
+            "game highlights",
+            "full game highlights",
+            "highlights |",
+            "highlights -",
+            "point game!",
+            "point game at",
+            "amazing last ",
+            "final game vs jazz",
+            "kobe draft 1996",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
