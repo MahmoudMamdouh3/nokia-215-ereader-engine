@@ -120,6 +120,8 @@ for raw_id, title, platform_id, file_path_str, meta_str in rows:
         "lecciones que nos dejó",
         "una amistad más allá",
         "más allá de las canchas",
+        "choc nel mondo",
+        "unomattina",
     ]
     is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
     

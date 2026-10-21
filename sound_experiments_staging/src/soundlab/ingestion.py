@@ -228,6 +228,8 @@ class IngestionEngine:
             "lecciones que nos dejó",
             "una amistad más allá",
             "más allá de las canchas",
+            "choc nel mondo",
+            "unomattina",
         ]
         is_third_party = any(ind in title_lower for ind in non_kobe_indicators)
         if not is_third_party:
